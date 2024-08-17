@@ -48,9 +48,10 @@ body, html {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #333;
+  background-color: #fbfbfb5b;
   padding: 1rem;
   z-index: 1000;
+  box-shadow: 1px 1px 13px 3px #3f3f3f19;
 }
 
 .navbar ul {
@@ -66,7 +67,8 @@ body, html {
 }
 
 .navbar a, .navbar button {
-  color: white;
+  color: rgb(9, 50, 132);
+  font-family: monospace;
   text-decoration: none;
   cursor: pointer;
   border: none;
@@ -87,7 +89,11 @@ body, html {
 }
 
 .section1 {
-  background-color: #f1c40f;
+  background: #ADA996;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
 }
 
 .section2 {
@@ -98,6 +104,14 @@ body, html {
   background-color: #e74c3c;
 }
 
+h2 {
+  font-family: monospace;
+  font-weight: 200;
+}
+p {
+  font-family: monospace;
+  font-size: 1.2rem;
+}
 
 .profile-pic {
 
@@ -113,6 +127,7 @@ body, html {
   gap: 2rem;
   padding: 3rem;
   background-color: rgba(255, 255, 255, 0.85);
+  border: 1px blue dashed;
   border-radius: 1rem;
   max-width: 800px;
 }
