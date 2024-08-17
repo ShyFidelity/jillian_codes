@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link, Element, animateScroll as scroll } from 'react-scroll';
 import './App.css';
+import me from './assets/profpic1small.png'
+
 
 const App = () => {
   const scrollToTop = () => {
@@ -35,7 +37,13 @@ const App = () => {
 
       {/* Page Sections */}
       <Element name="section1" className="section section1">
+        <div className='child-section'>
+        <div>
         <h2>Section 1</h2>
+        <p>Hi! I'm Jillian, a dynamic artist, UI/UX developer, and front-end builder who thrives on pushing creative boundaries. I'm passionate about crafting unique and engaging digital experiences that stand out from the status quo. Let's create something amazing together!</p>
+        </div>
+        <img className='profile-pic' src={me} alt="My Example" /> 
+        </div>
       </Element>
 
       <Element name="section2" className="section section2">

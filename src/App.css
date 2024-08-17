@@ -97,3 +97,22 @@ body, html {
 .section3 {
   background-color: #e74c3c;
 }
+
+
+.profile-pic {
+
+  height: 250px;
+  border-radius: 50%;
+  border: blue 1px solid;
+}
+
+.child-section {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 2rem;
+  padding: 3rem;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 1rem;
+  max-width: 800px;
+}
