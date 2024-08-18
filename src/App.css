@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Monofett&family=Share+Tech+Mono&display=swap');
@@ -49,20 +52,21 @@
 body, html {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  font-family: monospace;
 }
 
 .navbar {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #fbfbfb5b;
+  background-color:#3147b3;
   padding: 1rem;
   z-index: 1000;
   box-shadow: 1px 1px 13px 3px #3f3f3f19;
 }
 
 .navbar ul {
+  gap: 6rem;
   list-style: none;
   display: flex;
   justify-content: center;
@@ -75,39 +79,56 @@ body, html {
 }
 
 .navbar a, .navbar button {
-  color: rgb(9, 50, 132);
+  color: rgb(251, 251, 251);
   font-family: "Share Tech Mono", monospace;
   text-decoration: none;
   cursor: pointer;
   border: none;
   background: none;
-  font-size: 16px;
+  letter-spacing: 1px;
+  font-size: 2rem;
 }
 
 .navbar a:hover, .navbar button:hover {
-  color: #00f;
+  color: rgb(238, 238, 238);
 }
 
 .section {
   height: auto;
   display: flex;
-  justify-content: center;
-  padding: 3rem;
   align-items: center;
+  justify-content: center;
+
   font-size: 2rem;
 }
 
 .section1 {
+  width: auto;
   padding-top: 9rem;
-  background: #ADA996;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
+  padding-bottom: 9rem;
+  background-image: url(./assets/bg2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* background: #ADA996;  /* fallback for old browsers */
+/* background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  
+background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  */
 }
 
+.section2-parent {
+  border-top: 0.5px solid blue;
+  padding-top: 3rem;
+  background: #D3CCE3;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  width: auto;
+  display: flex;
+  justify-content: center;
+}
 .section2 {
-  background-color: #1abc9c;
+  
+  max-width: 960px;
   display: flex;
   flex-direction: column;
 }
@@ -117,9 +138,12 @@ background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3
 }
 
 h2 {
-  transform:rotate(270deg);
+
   font-family: "Orbitron", sans-serif;
-  font-weight: 400;  font-weight: 200;
+  font-weight: 600;  
+  font-size: 2.5rem;
+  color: rgb(16, 18, 156);
+  padding-bottom: 2rem;
 }
 p {
   font-family: "Share Tech Mono", monospace;
@@ -139,11 +163,42 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+ 
+}
+
+.icon-section > div {
+  display: flex;
+  flex-direction: row;
+  align-items:end;
+  justify-content: end;
+  gap: 1rem; 
+}
+.icon-section >div> p {
+  font-size: 1rem;
+  font-family: "Share Tech Mono", monospace;
+
 }
 
 
+a {
+  font-family: "Share Tech Mono", monospace;
+  font-size: 1.1rem;
+  font-weight: 400;
+  transition: ease-in-out 0.3s;
+}
+
+a:hover {
+  text-shadow: 
+  0 0 5px rgb(236, 255, 255), 
+  0 0 10px rgb(233, 255, 255), 
+  0 0 20px rgb(206, 200, 249), 
+  0 0 40px rgb(206, 255, 255), 
+  0 0 80px rgb(220, 253, 253), 
+  0 0 100px rgb(164, 170, 251);
+}
+
 .icons {
-  height: 60px;
+  max-height: 50px;
 }
 
 .child-section {
@@ -152,10 +207,10 @@ p {
   flex-direction: column;
   gap: 2rem;
   padding: 3rem;
-  background-color: rgba(255, 255, 255, 0.85);
-  border: 1px blue dashed;
+  background-color: rgba(255, 255, 255, 0.931);
+  border: 3px blue double;
   border-radius: 1rem;
-  max-width: 800px;
+  max-width: 960px;
 }
 
 .inner-child-section {
