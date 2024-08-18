@@ -137,6 +137,8 @@ background: linear-gradient(to bottom, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, 
   background-color: #e74c3c;
 }
 
+
+
 h2 {
 
   font-family: "Orbitron", sans-serif;
@@ -147,8 +149,9 @@ h2 {
 }
 p {
   font-family: "Share Tech Mono", monospace;
-
-  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  line-height: 3rem;
+  font-size: 1.3rem;
 }
 
 .profile-pic {
@@ -181,6 +184,7 @@ p {
 
 
 a {
+
   font-family: "Share Tech Mono", monospace;
   font-size: 1.1rem;
   font-weight: 400;
@@ -195,6 +199,13 @@ a:hover {
   0 0 40px rgb(206, 255, 255), 
   0 0 80px rgb(220, 253, 253), 
   0 0 100px rgb(164, 170, 251);
+}
+
+li {
+  display: flex;
+  gap: 1rem;
+  flex-direction: row;
+  align-items: center;
 }
 
 .icons {

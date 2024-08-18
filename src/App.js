@@ -13,6 +13,8 @@ import Resume from "./assets/resume.png";
 import Mail from "./assets/mailme.png";
 import Bg from "./assets/bg.png";
 import Linkedin from "./assets/linkedin.png";
+import Hat from "./assets/hatblue.png";
+import Work from "./assets/workicon.png"
 
 const App = () => {
   const scrollToTop = () => {
@@ -24,12 +26,15 @@ const App = () => {
       {/* Navbar */}
       <nav className="navbar">
         <ul>
+       
           <li>
+          <img className="h-8" src={Hat} alt="Cowboy hat icon" />{" "}
             <Link to="section1" smooth={true} duration={500}>
               Howdy
             </Link>
           </li>
           <li>
+          <img className="h-8" src={Work} alt="My Example" />{" "}
             <Link to="section2" smooth={true} duration={500}>
               Work
             </Link>
@@ -52,11 +57,10 @@ const App = () => {
             <div>
               <h2>Howdy</h2>
 
-              <p>
+              <p className="pb-10">
                 Hi! I'm Jillian, a dynamic artist, UI/UX developer, and
-                front-end builder who thrives on pushing creative boundaries.
-                I'm passionate about crafting unique and engaging digital
-                experiences that stand out from the status quo. Let's create
+                front-end builder who thrives on pushing creative boundaries. 
+                I've built this site using React, Illustrator and Figma as well as lot of the work you see below. Let's create
                 something amazing together!
               </p>
             </div>
@@ -75,14 +79,14 @@ const App = () => {
             </div>
             <div>
               <img className="icons" src={Mail} />{" "}
-              <a href="mailto:fitzmauricejillian@gmail.com">
+              <a  href="mailto:fitzmauricejillian@gmail.com">
                 {" "}
                 fitzmauricejillian@gmail.com{" "}
               </a>
             </div>
             <div>
               <img className="icons" src={Phone} />{" "}
-              <a
+              <a 
                 className="contacta"
                 href="tel:3039013230"
                 onclick="ga('send', 'event', { eventCategory: 'Contact', eventAction: 'Call', eventLabel: 'Mobile Button'});"
