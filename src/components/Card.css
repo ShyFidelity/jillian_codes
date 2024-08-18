@@ -93,3 +93,220 @@
     background-color: #5e0145;
     transition: ease-in-out 400ms;
   }
+
+
+  @media (min-width: 1025px) and (max-width: 1280px) {
+  
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1200px) {
+
+    .card-container {
+      width: auto;
+      
+     flex-direction: column !important;
+     align-items: center;
+   
+      
+      height: fit-content;
+      border: #000000 2px solid;
+      padding: 1rem;
+      margin: 1rem;
+      margin-bottom: 2rem;
+  }
+  .card-img {
+      width: 100%;
+      height: auto;
+      border-radius: 1rem;
+      margin-top: 10px;
+  }
+  .card-desc, .card-inside  {
+      width: auto;
+      margin-top: 0.5rem;
+  }
+  .oneHundred {
+    flex-direction: column-reverse;
+}
+
+.contactData {
+
+  flex-direction: column;
+}
+
+
+
+.about {
+  border: none;
+  margin: 10px;
+}
+
+.hat {
+  width: 250px;
+}
+
+.contactData {
+display: flex;
+align-items: start;
+flex-direction: column !important;
+}
+
+.inner-child-section {
+    flex-wrap: wrap;
+}
+    
+    
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    
+    /* CSS */
+    .inner-child-section {
+        flex-wrap: wrap;
+    }
+        
+  }
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+    
+    /* CSS */
+    .inner-child-section {
+        flex-wrap: wrap;
+    }
+        
+    .card-container {
+        width: auto;
+        
+       flex-direction: column !important;
+       align-items: center;
+     
+        
+        height: fit-content;
+        border: #000000 2px solid;
+        padding: 1rem;
+        margin: 1rem;
+        margin-bottom: 2rem;
+    }
+    .card-img {
+        width: 100%;
+        height: auto;
+        border-radius: 1rem;
+        margin-top: 10px;
+    }
+    .card-desc, .card-inside  {
+        width: auto;
+        margin-top: 0.5rem;
+    }
+    .oneHundred {
+      flex-direction: column-reverse;
+  }
+
+  .contactData {
+
+    flex-direction: column;
+  }
+
+
+
+  .about {
+    border: none;
+    margin: 10px;
+}
+
+.hat {
+    width: 250px;
+}
+
+.contactData {
+  display: flex;
+  align-items: start;
+  flex-direction: column !important;
+}
+
+
+  }
+
+  
+
+
+
+
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+     a {
+        display: none;
+     }
+     .inner-child-section {
+        flex-wrap: wrap;
+    }
+        
+    .card-container {
+        width: auto;
+        
+       flex-direction: column !important;
+       align-items: center;
+     
+        
+        height: fit-content;
+        border-bottom: #161616 1px solid;
+        width: 100%;
+        padding: 1rem;
+        margin-bottom: 2rem;
+        margin: 1rem;
+    }
+
+    .card-img {
+        width: 100%;
+        height: auto;
+        border-radius: 1rem;
+        margin-top: 10px;
+    }
+
+    .card-desc, .card-inside  {
+        width: auto;
+        margin-top: 0.5rem;
+    }
+
+    .oneHundred {
+        flex-direction: column-reverse;
+    }
+
+
+
+    .about {
+        border: none;
+        margin: 10px;
+    }
+    
+    .hat {
+        width: 250px;
+    }
+
+    .contactData {
+      display: flex;
+      align-items: start;
+      flex-direction: column !important;
+    }
+  }

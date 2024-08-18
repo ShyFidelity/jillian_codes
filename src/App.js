@@ -53,11 +53,11 @@ const App = () => {
       {/* Page Sections */}
       <Element name="section1" className="section section1">
         <div className="child-section">
-          <div className="inner-child-section">
+          <div className="container columns-2 inner-child-section">
             <div>
               <h2>Howdy</h2>
 
-              <p className="pb-10">
+              <p className="pb-10 break-after-right">
                 Hi! I'm Jillian, a dynamic artist, UI/UX developer, and
                 front-end builder who thrives on pushing creative boundaries. 
                 I've built this site using React, Illustrator and Figma as well as lot of the work you see below. Let's create
