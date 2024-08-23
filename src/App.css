@@ -117,6 +117,8 @@ background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  */
 
 .section2-parent {
   border-top: 0.5px solid blue;
+  border-bottom: 0.5px solid blue;
+
   padding-top: 3rem;
   background: #D3CCE3;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to bottom, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
@@ -134,7 +136,50 @@ background: linear-gradient(to bottom, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, 
 }
 
 .section3 {
-  background-color: #e74c3c;
+    padding-top: 40px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(169deg, #9a60a6, #dff7e3, #f1b2dc, #2a64a674);
+    background-size: 600% 800%;
+    -webkit-animation: AnimationName 3s ease infinite;
+    -moz-animation: AnimationName 8s ease infinite;
+    animation: AnimationName 8s ease infinite;
+  }
+  
+  @-webkit-keyframes AnimationName {
+    0% {
+      background-position: 0% 33%;
+    }
+    50% {
+      background-position: 100% 54%;
+    }
+    100% {
+      background-position: 0% 47%;
+    }
+  }
+  @-moz-keyframes AnimationName {
+    0% {
+      background-position: 0% 47%;
+    }
+    50% {
+      background-position: 100% 54%;
+    }
+    100% {
+      background-position: 0% 47%;
+    }
+  }
+  @keyframes AnimationName {
+    0% {
+      background-position: 0% 47%;
+    }
+    50% {
+      background-position: 100% 54%;
+    }
+    100% {
+      background-position: 0% 47%;
+    }
+  
 }
 
 

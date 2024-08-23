@@ -5,7 +5,7 @@ import me from "./assets/profpic1small.png";
 import legacy from "./assets/docsecurity.svg";
 import { Card } from "./components/Card";
 import AItutor from "./assets/aitutor.png";
-import Github from "./assets/github-color.svg";
+import Github from "./assets/githubcolor.png";
 import Boltstack from "./assets/boltstack.png";
 import Edqualis from "./assets/edqualis.png";
 import Phone from "./assets/iphonenew.png";
@@ -13,8 +13,11 @@ import Resume from "./assets/resume.png";
 import Mail from "./assets/mailme.png";
 import Bg from "./assets/bg.png";
 import Linkedin from "./assets/linkedin.png";
-import Hat from "./assets/hatblue.png";
-import Work from "./assets/workicon.png"
+import Hat from "./assets/hatwhitenewnew.png";
+import Work from "./assets/worknew.png";
+import Mouse from "./assets/cutemouse.png";
+import Arrow from "./assets/arrowup.png";
+import WonderInk from "./assets/wonderink.png";
 
 const App = () => {
   const scrollToTop = () => {
@@ -26,25 +29,26 @@ const App = () => {
       {/* Navbar */}
       <nav className="navbar">
         <ul>
-       
           <li>
-          <img className="h-8" src={Hat} alt="Cowboy hat icon" />{" "}
+            <img className="h-8" src={Hat} alt="Cowboy hat icon" />{" "}
             <Link to="section1" smooth={true} duration={500}>
               Howdy
             </Link>
           </li>
           <li>
-          <img className="h-8" src={Work} alt="My Example" />{" "}
+            <img className="h-8" src={Work} alt="girl on laptop" />{" "}
             <Link to="section2" smooth={true} duration={500}>
               Work
             </Link>
           </li>
           <li>
+            <img className="h-8" src={Mouse} alt="cute mouse" />{" "}
             <Link to="section3" smooth={true} duration={500}>
               Graphics
             </Link>
           </li>
           <li>
+            <img className="h-8" src={Arrow} alt="arrow pointing up" />{" "}
             <button onClick={scrollToTop}>Back to Top</button>
           </li>
         </ul>
@@ -59,34 +63,56 @@ const App = () => {
 
               <p className="pb-10 break-after-right">
                 Hi! I'm Jillian, a dynamic artist, UI/UX developer, and
-                front-end builder who thrives on pushing creative boundaries. 
-                I've built this site using React, Illustrator and Figma as well as lot of the work you see below. Let's create
-                something amazing together!
+                front-end builder who thrives on pushing creative boundaries.
+                I've built this site using React, Illustrator and Figma as well
+                as all the work you see below. Let's create something amazing
+                together!
               </p>
             </div>
             <img className="profile-pic" src={me} alt="My Example" />{" "}
           </div>
-
+        
           <div className="icon-section">
-            <img className="icons" src={Github} />
-            <div >
-            <a  href="https://www.linkedin.com/in/jillianfitzmaurice100/"
+
+            
+            <div>
+              <a
+                href="https://github.com/ShyFidelity"
+                target="_blank"
+              >
+              <img className="icons" src={Github} />
+              </a>
+       
+              </div>
+
+
+
+
+            <div>
+              <a
+                href="https://www.linkedin.com/in/jillianfitzmaurice100/"
                 target="_blank"
               >
                 <img className="icons" src={Linkedin} alt="linkedin logo" />
               </a>
-            
             </div>
+
+
+
             <div>
               <img className="icons" src={Mail} />{" "}
-              <a  href="mailto:fitzmauricejillian@gmail.com">
+              <a href="mailto:fitzmauricejillian@gmail.com">
                 {" "}
                 fitzmauricejillian@gmail.com{" "}
               </a>
             </div>
+
+
+
+
             <div>
               <img className="icons" src={Phone} />{" "}
-              <a 
+              <a
                 className="contacta"
                 href="tel:3039013230"
                 onclick="ga('send', 'event', { eventCategory: 'Contact', eventAction: 'Call', eventLabel: 'Mobile Button'});"
@@ -140,11 +166,18 @@ const App = () => {
             link="https://esp-dev.softwarebbd.com/?rr_dev=true&"
             buttonText="Log in available upon request"
           />
+          <Card
+            imgSrc={WonderInk}
+            title="WonderInk Application"
+            info="WonderInk is a learning management system for leaders, parents, and students. I revamped the front-end interface to align with brand recognition, taking the lead in design decisions. Additionally, I developed the parent portal as a vital link between parents, students, and youth leaders, fostering continuous engagement in learning."
+            link="https://app.wonderink.org/?"
+            buttonText="Log in available upon request"
+          />
         </div>
       </Element>
 
       <Element name="section3" className="section section3">
-        <h2>Section 3</h2>
+        <h2>Graphics</h2>
       </Element>
     </div>
   );
