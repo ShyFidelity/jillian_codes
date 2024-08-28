@@ -1,11 +1,15 @@
 [
     {
-      "src": "bg.svg",
-      "alt": "Profile Picture"
+      "src": "5_GAMES.svg",
+      "alt": "badges trophy"
     },
     {
-      "src": "bg.png",
-      "alt": "Legacy Security"
+      "src": "10_GAMES.svg",
+      "alt": "badges trophy"
+    }, 
+    {
+      "src": "30_GAMES.svg",
+      "alt": "badges trophy"
     }
     
   ]
