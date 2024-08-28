@@ -71,22 +71,13 @@ const App = () => {
             </div>
             <img className="profile-pic" src={me} alt="My Example" />{" "}
           </div>
-        
+
           <div className="icon-section">
-
-            
             <div>
-              <a
-                href="https://github.com/ShyFidelity"
-                target="_blank"
-              >
-              <img className="icons" src={Github} />
+              <a href="https://github.com/ShyFidelity" target="_blank">
+                <img className="icons" src={Github} />
               </a>
-       
-              </div>
-
-
-
+            </div>
 
             <div>
               <a
@@ -96,31 +87,46 @@ const App = () => {
                 <img className="icons" src={Linkedin} alt="linkedin logo" />
               </a>
             </div>
-
-
-
             <div>
-              <img className="icons" src={Mail} />{" "}
-              <a href="mailto:fitzmauricejillian@gmail.com">
-                {" "}
-                fitzmauricejillian@gmail.com{" "}
-              </a>
-            </div>
-
-
-
-
-            <div>
-              <img className="icons" src={Phone} />{" "}
               <a
-                className="contacta"
-                href="tel:3039013230"
-                onclick="ga('send', 'event', { eventCategory: 'Contact', eventAction: 'Call', eventLabel: 'Mobile Button'});"
+                href="mailto:fitzmauricejillian@gmail.com"
+                style={{ display: "flex", alignItems: "center" }}
               >
-                303.901.3230
+                <img
+                  className="icons"
+                  src={Mail}
+                  alt="Email"
+                  style={{ marginRight: "8px" }}
+                />
+                fitzmauricejillian@gmail.com
               </a>
             </div>
-            <img className="icons" src={Resume} />
+
+              <div>
+  <a
+    className="contacta"
+    style={{ display: "flex", alignItems: "center" }}
+    href="tel:3039013230"
+    onClick={() => {
+      window.gtag('event', 'click', {
+        event_category: 'Contact',
+        event_label: 'Mobile Button',
+        value: 'Call'
+      });
+    }}
+  >
+    <img className="icons" src={Phone} alt="Phone" style={{ marginRight: '8px' }} />
+    303.901.3230
+  </a>
+</div>
+
+<div>
+  <a href="assets/JillianFitzMaurice_Resume.pdf" download>
+    <img className="icons" src={Resume} alt="Resume" />
+  </a>
+</div>
+
+
           </div>
         </div>
       </Element>
