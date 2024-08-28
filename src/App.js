@@ -19,9 +19,7 @@ import Mouse from "./assets/cutemouse.png";
 import Arrow from "./assets/arrowblue.png";
 import WonderInk from "./assets/wonderink.png";
 import ResumeJill from "./assets/JillianFitzMaurice_Resume.pdf"
-import Games5 from "./assets/0badges/5_GAMES.svg"
-import Games10 from "./assets/0badges/10_GAMES.svg"
-import Games30 from './assets/0badges/30_GAMES.svg'
+
 import imagesData from "./assets/images.json"
 
 const images = require.context('./assets/', false, /\.(png|jpe?g|svg)$/);
@@ -200,9 +198,9 @@ const App = () => {
 
 
 
-        <div>
+        <div className="badges-section">
       {imagesData.map((image, index) => (
-        <img key={index} src={images(`./${image.src}`)} alt={image.alt} />
+        <img className="badges" key={index} src={images(`./${image.src}`)} alt={image.alt} />
       ))}
     </div>
 
