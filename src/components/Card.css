@@ -116,7 +116,7 @@
    
       
       height: fit-content;
-      border: #000000 2px solid;
+      border:  blue 2px solid;
       padding: 1rem;
       margin: 1rem;
       margin-bottom: 2rem;
@@ -200,7 +200,7 @@ flex-direction: column !important;
      
         
         height: fit-content;
-        border: #000000 2px solid;
+  
         padding: 1rem;
         margin: 1rem;
         margin-bottom: 2rem;
@@ -270,7 +270,7 @@ flex-direction: column !important;
      
         
         height: fit-content;
-        border-bottom: #161616 1px solid;
+        border-bottom: #1a1355 1px solid;
         width: 100%;
         padding: 1rem;
         margin-bottom: 2rem;

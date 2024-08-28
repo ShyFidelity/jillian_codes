@@ -16,8 +16,16 @@ import Linkedin from "./assets/linkedin.png";
 import Hat from "./assets/hatwhitenewnew.png";
 import Work from "./assets/worknew.png";
 import Mouse from "./assets/cutemouse.png";
-import Arrow from "./assets/arrowup.png";
+import Arrow from "./assets/arrowblue.png";
 import WonderInk from "./assets/wonderink.png";
+import ResumeJill from "./assets/JillianFitzMaurice_Resume.pdf"
+import Games5 from "./assets/0badges/5_GAMES.svg"
+import Games10 from "./assets/0badges/10_GAMES.svg"
+import Games30 from './assets/0badges/30_GAMES.svg'
+import imagesData from "./assets/images.json"
+
+const images = require.context('./assets/', false, /\.(png|jpe?g|svg)$/);
+
 
 const App = () => {
   const scrollToTop = () => {
@@ -48,14 +56,13 @@ const App = () => {
             </Link>
           </li>
           <li>
-            <img className="h-8" src={Arrow} alt="arrow pointing up" />{" "}
-            <button onClick={scrollToTop}>Back to Top</button>
+            <div className="button-top" onClick={scrollToTop}>Back to Top</div>
           </li>
         </ul>
       </nav>
 
       {/* Page Sections */}
-      <Element name="section1" className="section section1">
+      <Element name="section1" className="section section1-bg section1">
         <div className="child-section">
           <div className="container columns-2 inner-child-section">
             <div>
@@ -121,7 +128,7 @@ const App = () => {
 </div>
 
 <div>
-  <a href="assets/JillianFitzMaurice_Resume.pdf" download>
+  <a href={ResumeJill} download>
     <img className="icons" src={Resume} alt="Resume" />
   </a>
 </div>
@@ -133,7 +140,7 @@ const App = () => {
 
       <Element name="section2" className="section2-parent">
         <div className="section section2">
-          <div class="w-full">
+          <div class="w-full section-header">
             {" "}
             <h2>Work</h2>
           </div>
@@ -182,8 +189,28 @@ const App = () => {
         </div>
       </Element>
 
-      <Element name="section3" className="section section3">
+      <Element name="section3" className="section section3-parent">
+      <div className="section3">
+  <div className="w-full flex flex-row">     
         <h2>Graphics</h2>
+        </div> 
+        <div className="flex flex-row w-full grid grid-cols-6 gap-x-3	justify-between">
+      <h2>Coming soon......</h2>
+        </div>
+
+
+
+        <div>
+      {imagesData.map((image, index) => (
+        <img key={index} src={images(`./${image.src}`)} alt={image.alt} />
+      ))}
+    </div>
+
+
+
+
+        </div>
+
       </Element>
     </div>
   );
