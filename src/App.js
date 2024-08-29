@@ -192,9 +192,9 @@ const App = () => {
   <div className="w-full flex flex-row">     
         <h2>Graphics</h2>
         </div> 
-        <div className="flex flex-row w-full grid grid-cols-6 gap-x-3	justify-between">
-      <h2>Coming soon......</h2>
-        </div>
+        {/* <div className="flex flex-row w-full grid grid-cols-6 gap-x-3	justify-between">
+
+        </div> */}
 
 
 

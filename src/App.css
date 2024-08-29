@@ -292,11 +292,29 @@ li {
 
 .badges-section {
   max-width: 960px;
-  
+
   display: flex;
   justify-content: space-between;
   flex-direction: row;
   width: 100%;
+}
+
+
+
+.badges-section {
+  max-width: 960px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+  gap: 20px; 
+  flex-wrap: nowrap; /* Ensure no wrapping by default */
+}
+
+@media (max-width: 1400px) {
+  .badges-section {
+    flex-wrap: wrap; /* Enable wrapping when the screen is 960px or less */
+  }
 }
 
 .child-section {
