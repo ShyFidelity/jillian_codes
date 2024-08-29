@@ -308,7 +308,7 @@ li {
   flex-direction: row;
   width: 100%;
   gap: 20px; 
-  flex-wrap: nowrap; /* Ensure no wrapping by default */
+  flex-wrap: wrap; 
 }
 
 @media (max-width: 1400px) {
