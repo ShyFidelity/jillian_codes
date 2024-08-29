@@ -291,6 +291,8 @@ li {
 }
 
 .badges-section {
+  max-width: 960px;
+  
   display: flex;
   justify-content: space-between;
   flex-direction: row;

@@ -12,15 +12,23 @@
       "alt": "badges trophy"
     }, 
     {
-      "src": "30_DAY_STREAK.png",
+      "src": "30_DAY_STREAK.svg",
       "alt": "badges trophy"
     }, 
     {
-      "src": "100_DAY_STREAK.svg",
+      "src": "100_DAY_STREAK.png",
       "alt": "badges trophy"
     }, 
     {
       "src": "10_ELEPHANT.svg",
+      "alt": "badges trophy"
+    }, 
+    {
+      "src": "30_ELEPHANT.svg",
+      "alt": "badges trophy"
+    }, 
+    {
+      "src": "memorymatch1.svg",
       "alt": "badges trophy"
     }
     
