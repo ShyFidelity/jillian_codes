@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/jillian_codes/static/css/main.f4da8ce0.css",
-    "main.js": "/jillian_codes/static/js/main.aad062b2.js",
+    "main.css": "/jillian_codes/static/css/main.fbb8d441.css",
+    "main.js": "/jillian_codes/static/js/main.012c6c5f.js",
     "static/js/453.80a3fe8d.chunk.js": "/jillian_codes/static/js/453.80a3fe8d.chunk.js",
     "static/media/edqualis2.png": "/jillian_codes/static/media/edqualis2.5be6a3c307dc17b31b22.png",
     "static/media/edqualis.png": "/jillian_codes/static/media/edqualis.01c10c1bfd7c1a5daa82.png",
@@ -11,9 +11,11 @@
     "static/media/5_GAMES.svg": "/jillian_codes/static/media/5_GAMES.243b47f2de8f26b6408b.svg",
     "static/media/aitutor.png": "/jillian_codes/static/media/aitutor.73af968973bf5827b13b.png",
     "static/media/profpic1small.png": "/jillian_codes/static/media/profpic1small.f726a1d84f3ac492446c.png",
+    "static/media/ASSISTANT_DETECTIVE.svg": "/jillian_codes/static/media/ASSISTANT_DETECTIVE.7c959309e9d601706678.svg",
     "static/media/10_GAMES.svg": "/jillian_codes/static/media/10_GAMES.decfacf26968c3c99251.svg",
     "static/media/bg.png": "/jillian_codes/static/media/bg.487c775e2232b95f1344.png",
     "static/media/bg2.png": "/jillian_codes/static/media/bg2.798243adb7619260965b.png",
+    "static/media/ANNIVERSARY_YEAR.svg": "/jillian_codes/static/media/ANNIVERSARY_YEAR.6f8ff05d7bb0216deae3.svg",
     "static/media/30_GAMES.svg": "/jillian_codes/static/media/30_GAMES.bb6e4eae8ef854dc3f15.svg",
     "static/media/docsecurity.svg": "/jillian_codes/static/media/docsecurity.542b8022ece463c57def9faec1dab2a6.svg",
     "static/media/100_DAY_STREAK.png": "/jillian_codes/static/media/100_DAY_STREAK.569141fea5322f09a276.png",
@@ -27,25 +29,27 @@
     "static/media/hatwhitenewnew.png": "/jillian_codes/static/media/hatwhitenewnew.1aa575daa8aa130718b3.png",
     "static/media/cutemouse.png": "/jillian_codes/static/media/cutemouse.373245ce8c4728f6eed1.png",
     "static/media/mailme.png": "/jillian_codes/static/media/mailme.04ff9cba21aa19597703.png",
+    "static/media/COLLECTOR.svg": "/jillian_codes/static/media/COLLECTOR.3b8f9b19fafe44a84a23.svg",
     "static/media/bg.svg": "/jillian_codes/static/media/bg.a2536bd936c8ebb1dbdc.svg",
     "static/media/linkedin.png": "/jillian_codes/static/media/linkedin.06a962e31d46ec17e36f.png",
     "static/media/iphonenew.png": "/jillian_codes/static/media/iphonenew.6332abc0f1940912e8fd.png",
     "static/media/resume.png": "/jillian_codes/static/media/resume.233aa29618fe8b772cb5.png",
     "static/media/maileme.svg": "/jillian_codes/static/media/maileme.13a3837a9a8ad48963ae.svg",
     "static/media/arrowblue.png": "/jillian_codes/static/media/arrowblue.0a91d06bd3f54d8d580f.png",
-    "static/media/arrowup.png": "/jillian_codes/static/media/arrowup.878b7cc9903188c5c709.png",
     "static/media/30_ELEPHANT.svg": "/jillian_codes/static/media/30_ELEPHANT.e6e8738b2eb5dca39670.svg",
+    "static/media/chooseyourclues1.svg": "/jillian_codes/static/media/chooseyourclues1.d3f7236c58dc6c84b61f.svg",
+    "static/media/chooseyourcluesassistantdetetective.svg": "/jillian_codes/static/media/chooseyourcluesassistantdetetective.d1fe04615940f97f9f3a.svg",
     "static/media/30_DAY_STREAK.svg": "/jillian_codes/static/media/30_DAY_STREAK.fd7f3a765c4b892051e1.svg",
     "static/media/10_ELEPHANT.svg": "/jillian_codes/static/media/10_ELEPHANT.d9d026090cca4f70021c.svg",
     "static/media/github-color.svg": "/jillian_codes/static/media/github-color.f5527e527dc831b252f1.svg",
     "static/media/memorymatch1.svg": "/jillian_codes/static/media/memorymatch1.cb6f34f689d6ce7a174f.svg",
     "index.html": "/jillian_codes/index.html",
-    "main.f4da8ce0.css.map": "/jillian_codes/static/css/main.f4da8ce0.css.map",
-    "main.aad062b2.js.map": "/jillian_codes/static/js/main.aad062b2.js.map",
+    "main.fbb8d441.css.map": "/jillian_codes/static/css/main.fbb8d441.css.map",
+    "main.012c6c5f.js.map": "/jillian_codes/static/js/main.012c6c5f.js.map",
     "453.80a3fe8d.chunk.js.map": "/jillian_codes/static/js/453.80a3fe8d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f4da8ce0.css",
-    "static/js/main.aad062b2.js"
+    "static/css/main.fbb8d441.css",
+    "static/js/main.012c6c5f.js"
   ]
 }
