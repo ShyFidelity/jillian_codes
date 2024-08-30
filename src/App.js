@@ -18,12 +18,11 @@ import Work from "./assets/worknew.png";
 import Mouse from "./assets/cutemouse.png";
 import Arrow from "./assets/arrowblue.png";
 import WonderInk from "./assets/wonderink.png";
-import ResumeJill from "./assets/JillianFitzMaurice_Resume.pdf"
+import ResumeJill from "./assets/JillianFitzMaurice_Resume.pdf";
 
-import imagesData from "./assets/images.json"
+import imagesData from "./assets/images.json";
 
-const images = require.context('./assets/', false, /\.(png|jpe?g|svg)$/);
-
+const images = require.context("./assets/", false, /\.(png|jpe?g|svg)$/);
 
 const App = () => {
   const scrollToTop = () => {
@@ -54,7 +53,9 @@ const App = () => {
             </Link>
           </li>
           <li>
-            <div className="button-top" onClick={scrollToTop}>Back to Top</div>
+            <div className="button-top" onClick={scrollToTop}>
+              Back to Top
+            </div>
           </li>
         </ul>
       </nav>
@@ -107,31 +108,34 @@ const App = () => {
               </a>
             </div>
 
-              <div>
-  <a
-    className="contacta"
-    style={{ display: "flex", alignItems: "center" }}
-    href="tel:3039013230"
-    onClick={() => {
-      window.gtag('event', 'click', {
-        event_category: 'Contact',
-        event_label: 'Mobile Button',
-        value: 'Call'
-      });
-    }}
-  >
-    <img className="icons" src={Phone} alt="Phone" style={{ marginRight: '8px' }} />
-    303.901.3230
-  </a>
-</div>
+            <div>
+              <a
+                className="contacta"
+                style={{ display: "flex", alignItems: "center" }}
+                href="tel:3039013230"
+                onClick={() => {
+                  window.gtag("event", "click", {
+                    event_category: "Contact",
+                    event_label: "Mobile Button",
+                    value: "Call",
+                  });
+                }}
+              >
+                <img
+                  className="icons"
+                  src={Phone}
+                  alt="Phone"
+                  style={{ marginRight: "8px" }}
+                />
+                303.901.3230
+              </a>
+            </div>
 
-<div>
-  <a href={ResumeJill} download>
-    <img className="icons" src={Resume} alt="Resume" />
-  </a>
-</div>
-
-
+            <div>
+              <a href={ResumeJill} download>
+                <img className="icons" src={Resume} alt="Resume" />
+              </a>
+            </div>
           </div>
         </div>
       </Element>
@@ -188,27 +192,28 @@ const App = () => {
       </Element>
 
       <Element name="section3" className="section section3-parent">
-      <div className="section3">
-  <div className="w-full flex flex-row">     
-        <h2>Graphics</h2>
-        </div> 
-        {/* <div className="flex flex-row w-full grid grid-cols-6 gap-x-3	justify-between">
+        <div className="section3">
+          <div className="w-full flex flex-row">
+            <h2>Graphics</h2>
+          </div>
+          {/* <div className="flex flex-row w-full grid grid-cols-6 gap-x-3	justify-between">
 
         </div> */}
+          <div className="child-section mb-6">
+          <h3 className="w-full">Badges</h3>
 
-
-
-        <div className="badges-section">
-      {imagesData.map((image, index) => (
-        <img className="badges" key={index} src={images(`./${image.src}`)} alt={image.alt} />
-      ))}
-    </div>
-
-
-
-
+          <div className="badges-section">
+            {imagesData.map((image, index) => (
+              <img
+                className="badges"
+                key={index}
+                src={images(`./${image.src}`)}
+                alt={image.alt}
+              />
+            ))}
+          </div>
+          </div>
         </div>
-
       </Element>
     </div>
   );
