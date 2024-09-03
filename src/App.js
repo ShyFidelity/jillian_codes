@@ -66,12 +66,13 @@ const App = () => {
         <div className="child-section">
           <div className="container columns-2 inner-child-section">
             <div>
-              <TypeAnimation className="h2"
+              <TypeAnimation
+              className="type-anim"
                 sequence={["Howdy", 500, "Hello", 500, "Hey There", 500, "¡Hola!", 500,"Bonjour", 500]}
-                style={{ fontSize: "2em, color: "}}
+                style={{ fontSize: "2.6rem",   color: "#10129c"}}
                 repeat={Infinity}
-                speed={20}
-                deletionSpeed={20}
+                speed={2}
+                deletionSpeed={10}
               
               />
 
