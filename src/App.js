@@ -19,6 +19,7 @@ import Mouse from "./assets/cutemouse.png";
 import Arrow from "./assets/arrowblue.png";
 import WonderInk from "./assets/wonderink.png";
 import ResumeJill from "./assets/JillianFitzMaurice_Resume.pdf";
+import { TypeAnimation } from "react-type-animation";
 
 import imagesData from "./assets/images.json";
 
@@ -65,7 +66,14 @@ const App = () => {
         <div className="child-section">
           <div className="container columns-2 inner-child-section">
             <div>
-              <h2>Howdy</h2>
+              <TypeAnimation className="h2"
+                sequence={["Howdy", 500, "Hello", 500, "Hey There", 500, "¡Hola!", 500,"Bonjour", 500]}
+                style={{ fontSize: "2em, color: "}}
+                repeat={Infinity}
+                speed={20}
+                deletionSpeed={20}
+              
+              />
 
               <p className="pb-10 break-after-right">
                 Hi! I'm Jillian, a dynamic artist, UI/UX developer, and
@@ -199,19 +207,19 @@ const App = () => {
           {/* <div className="flex flex-row w-full grid grid-cols-6 gap-x-3	justify-between">
 
         </div> */}
-          <div className="child-section mb-6">
-          <h3 className="w-full">Badges</h3>
+          <div className="child-section mb-8">
+            <h3 className="w-full">Badges</h3>
 
-          <div className="badges-section">
-            {imagesData.map((image, index) => (
-              <img
-                className="badges"
-                key={index}
-                src={images(`./${image.src}`)}
-                alt={image.alt}
-              />
-            ))}
-          </div>
+            <div className="badges-section">
+              {imagesData.map((image, index) => (
+                <img
+                  className="badges"
+                  key={index}
+                  src={images(`./${image.src}`)}
+                  alt={image.alt}
+                />
+              ))}
+            </div>
           </div>
         </div>
       </Element>
