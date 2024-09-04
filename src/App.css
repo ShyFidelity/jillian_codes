@@ -141,6 +141,18 @@ background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  */
 border-bottom: #3147b3 1px solid;
 } */
 
+
+
+.legacy-card {
+  background-color: rgba(0, 0, 0, 0.793) !important;
+  width: 800px;
+  padding: 2rem;
+  align-items: center;
+  border-radius: 1rem;
+  border: green 1px solid;
+  
+}
+
 .section2-parent {
   border-top: 0.5px solid blue;
   border-bottom: 0.5px solid blue;
@@ -149,12 +161,12 @@ border-bottom: #3147b3 1px solid;
   background: #d3cce3; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to bottom,
-    #e9e4f0,
-    #d3cce3
+    #050234,
+    #100046
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to bottom,
-    #e9e4f0,
+    #020737 70%,
     #d3cce3
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 

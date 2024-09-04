@@ -20,6 +20,7 @@ import Arrow from "./assets/arrowblue.png";
 import WonderInk from "./assets/wonderink.png";
 import ResumeJill from "./assets/JillianFitzMaurice_Resume.pdf";
 import { TypeAnimation } from "react-type-animation";
+import JillianGif from "./assets/legacycodevid.gif"
 
 import imagesData from "./assets/images.json";
 
@@ -150,19 +151,30 @@ const App = () => {
       </Element>
 
       <Element name="section2" className="section2-parent">
-        <div className="section section2">
-          <div class="w-full section-header">
+
+        
+          <div className="section section2">
+
+
+        
+          <div class="w-full flex-col section-header">
             {" "}
-            <h2>Work</h2>
+            <h2 className="text-white">Work</h2>
           </div>
-          <Card
-            imgSrc={legacy}
+
+          
+
+
+       
+          <Card 
+            imgSrc={JillianGif}
             imgAlt="lawyer app"
             title="Legacy Architects"
             info="Recent collaborative Figma project for estate planning lawyers. Password is shyfidelity."
             link="https://www.figma.com/design/ZulEUpRGw8VCuAIIwSchlI/Lawyer-side-of-Legacy-Architects?node-id=2-282&t=m3vfyViyT4aNMUUV-1"
             buttonText="Go to Figma project"
           />
+          
 
           <Card
             imgSrc={AItutor}
