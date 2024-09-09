@@ -170,8 +170,8 @@ const App = () => {
             imgSrc={JillianGif}
             imgAlt="lawyer app"
             title="Legacy Architects"
-            info="Recent collaborative Figma project for estate planning lawyers. Password is shyfidelity."
-            link="https://www.figma.com/design/ZulEUpRGw8VCuAIIwSchlI/Lawyer-side-of-Legacy-Architects?node-id=2-282&t=m3vfyViyT4aNMUUV-1"
+            info="Recent collaborative Figma project for estate planning lawyers."
+            link="https://www.figma.com/design/369OzhMUnxL4gwjOdFPaYy/Updated-App-Designs?node-id=225-106834&t=zRooO2IHEXvbEkVG-1"
             buttonText="Go to Figma project"
           />
           
@@ -220,6 +220,21 @@ const App = () => {
           {/* <div className="flex flex-row w-full grid grid-cols-6 gap-x-3	justify-between">
 
         </div> */}
+          <div className="child-section mb-8">
+            <h3 className="w-full">Badges</h3>
+
+            <div className="badges-section">
+              {imagesData.map((image, index) => (
+                <img
+                  className="badges"
+                  key={index}
+                  src={images(`./${image.src}`)}
+                  alt={image.alt}
+                />
+              ))}
+            </div>
+          </div>
+
           <div className="child-section mb-8">
             <h3 className="w-full">Badges</h3>
 
