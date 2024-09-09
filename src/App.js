@@ -23,8 +23,12 @@ import { TypeAnimation } from "react-type-animation";
 import JillianGif from "./assets/legacycodevid.gif"
 
 import imagesData from "./assets/images.json";
+import drawingData from "./assets/drawings.json";
+
 
 const images = require.context("./assets/", false, /\.(png|jpe?g|svg)$/);
+const drawings = require.context("./assets/", false, /\.(png|jpe?g|svg)$/);
+
 
 const App = () => {
   const scrollToTop = () => {
@@ -198,9 +202,9 @@ const App = () => {
             imgAlt="a screenshot of a Boltstack website talking about AI"
             title="Edqualis"
             info="Edqualis is an expansive education platform that engages admins, teachers, and students in one place. With the ability to generate content, forms, custom Dashboards, classes, lessons, rubrics, and custom branded UI.
-       Reskinned the entire application to give a more modern look."
-            link="https://esp-dev.softwarebbd.com/?rr_dev=true&"
-            buttonText="Log in available upon request"
+       Reskinned the entire application on live site to give a more modern look. My case study and live site log in are available to see here."
+            link="https://www.figma.com/design/LYvcCqLYk36RPN5SPsIYQW/EdQualis-Case-Study?node-id=0-1&t=4QYqBJPuMpC4UyST-1"
+            buttonText="Go to Figma"
           />
           <Card
             imgSrc={WonderInk}
@@ -236,19 +240,23 @@ const App = () => {
           </div>
 
           <div className="child-section mb-8">
-            <h3 className="w-full">Badges</h3>
+            <h3 className="w-full">Others</h3>
 
             <div className="badges-section">
-              {imagesData.map((image, index) => (
+              {drawingData.map((drawing, index) => (
                 <img
-                  className="badges"
+                  className="drawings"
                   key={index}
-                  src={images(`./${image.src}`)}
-                  alt={image.alt}
+                  src={drawings(`./${drawing.src}`)}
+                  alt={drawing.alt}
                 />
               ))}
             </div>
           </div>
+          <div className="mt-10 mb-10">
+              <h3>Thank you for visiting!
+              I’m thrilled to have you here exploring my work. Each project is crafted with creativity and attention to detail, and I hope you enjoy browsing as much as I enjoyed building these experiences. Feel free to reach out if anything sparks your curiosity or if you'd like to collaborate. Let’s create something amazing together!</h3>
+            </div>
         </div>
       </Element>
     </div>

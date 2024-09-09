@@ -317,6 +317,10 @@ li {
   height: 150px;
 }
 
+.drawings {
+  height: 250px;
+}
+
 .badges-section {
   max-width: 960px;
 
