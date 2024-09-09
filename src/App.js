@@ -20,15 +20,14 @@ import Arrow from "./assets/arrowblue.png";
 import WonderInk from "./assets/wonderink.png";
 import ResumeJill from "./assets/JillianFitzMaurice_Resume.pdf";
 import { TypeAnimation } from "react-type-animation";
-import JillianGif from "./assets/legacycodevid.gif"
+import JillianGif from "./assets/legacycodevid.gif";
+import HatStar from "./assets/hatblue.png";
 
 import imagesData from "./assets/images.json";
 import drawingData from "./assets/drawings.json";
 
-
 const images = require.context("./assets/", false, /\.(png|jpe?g|svg)$/);
 const drawings = require.context("./assets/", false, /\.(png|jpe?g|svg)$/);
-
 
 const App = () => {
   const scrollToTop = () => {
@@ -72,13 +71,23 @@ const App = () => {
           <div className="container columns-2 inner-child-section">
             <div>
               <TypeAnimation
-              className="type-anim"
-                sequence={["Howdy", 500, "Hello", 500, "Hey There", 500, "¡Hola!", 500,"Bonjour", 500]}
-                style={{ fontSize: "2.6rem",   color: "#10129c"}}
+                className="type-anim"
+                sequence={[
+                  "Howdy",
+                  500,
+                  "Hello",
+                  500,
+                  "Hey There",
+                  500,
+                  "¡Hola!",
+                  500,
+                  "Bonjour",
+                  500,
+                ]}
+                style={{ fontSize: "2.6rem", color: "#10129c" }}
                 repeat={Infinity}
                 speed={2}
                 deletionSpeed={10}
-              
               />
 
               <p className="pb-10 break-after-right">
@@ -155,22 +164,13 @@ const App = () => {
       </Element>
 
       <Element name="section2" className="section2-parent">
-
-        
-          <div className="section section2">
-
-
-        
+        <div className="mb-40 section section2">
           <div class="w-full flex-col section-header">
             {" "}
             <h2 className="text-white">Work</h2>
           </div>
 
-          
-
-
-       
-          <Card 
+          <Card
             imgSrc={JillianGif}
             imgAlt="lawyer app"
             title="Legacy Architects"
@@ -178,7 +178,6 @@ const App = () => {
             link="https://www.figma.com/design/369OzhMUnxL4gwjOdFPaYy/Updated-App-Designs?node-id=225-106834&t=zRooO2IHEXvbEkVG-1"
             buttonText="Go to Figma project"
           />
-          
 
           <Card
             imgSrc={AItutor}
@@ -209,10 +208,24 @@ const App = () => {
           <Card
             imgSrc={WonderInk}
             title="WonderInk Application"
-            info="WonderInk is a learning management system for leaders, parents, and students. I revamped the front-end interface to align with brand recognition, taking the lead in design decisions. Additionally, I developed the parent portal as a vital link between parents, students, and youth leaders, fostering continuous engagement in learning."
+            info="WonderInk is a learning management system for leaders, parents, and students. I revamped the front-end interface to align with brand recognition, taking the lead in design decisions. Additionally, I developed the parent portal as a vital link between parents, students, and youth leaders, fostering continuous engagement in learning. Username: jillian@softwarebb.com / Password: Church100!"
             link="https://app.wonderink.org/?"
-            buttonText="Log in available upon request"
+            buttonText="Go to Website"
           />
+
+          <div className="mt-24">
+            <p>
+              I acknowledge that some of my projects may appear to have limited
+              documentation, and that’s true to some extent. Many of these sites
+              were built using a low-code internal design platform, where I
+              handled both front-end development and design work. Due to tight
+              deadlines, much of the process was done on the go. If I were to
+              identify an area for improvement in my workflow, it would be to
+              prioritize more thorough documentation. It’s a valuable aspect of
+              the development process that ensures long-term maintainability and
+              better collaboration.
+            </p>
+          </div>
         </div>
       </Element>
 
@@ -253,10 +266,19 @@ const App = () => {
               ))}
             </div>
           </div>
-          <div className="mt-10 mb-10">
-              <h3>Thank you for visiting!
-              I’m thrilled to have you here exploring my work. Each project is crafted with creativity and attention to detail, and I hope you enjoy browsing as much as I enjoyed building these experiences. Feel free to reach out if anything sparks your curiosity or if you'd like to collaborate. Let’s create something amazing together!</h3>
-            </div>
+          <div className="my-32 flex justify-center">
+            <img className="hat" src={HatStar} alt={"cowboy Hat"} />
+          </div>
+          <div className="my-32">
+            <h3>
+              Thank you for visiting! I’m thrilled to have you here exploring my
+              work. Each project is crafted with creativity and attention to
+              detail, and I hope you enjoy browsing as much as I enjoyed
+              building these experiences. Feel free to reach out if anything
+              sparks your curiosity or if you'd like to collaborate. Let’s
+              create something amazing together!
+            </h3>
+          </div>
         </div>
       </Element>
     </div>

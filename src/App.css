@@ -166,7 +166,7 @@ border-bottom: #3147b3 1px solid;
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to bottom,
-    #020737 70%,
+    #273a91e2 60%,
     #d3cce3
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
@@ -309,6 +309,25 @@ li {
 
 .icons {
   max-height: 50px;
+}
+
+.hat {
+  display: inline-block;
+  width: 300px;
+  animation: tipHat 3s ease-in-out infinite;
+  transform-origin: bottom center;
+}
+
+@keyframes tipHat {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(30deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 .badges {
