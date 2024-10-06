@@ -22,7 +22,9 @@ import ResumeJill from "./assets/JillianFitzMaurice_Resume.pdf";
 import { TypeAnimation } from "react-type-animation";
 import JillianGif from "./assets/legacycodevid.gif";
 import HatStar from "./assets/hatblue.png";
-
+import LegacyBG from "./assets/legacybg.png";
+import AIBG from "./assets/ai-tutor-bg-w.png";
+import AIss from "./assets/Incorrect.png"
 import imagesData from "./assets/images.json";
 import drawingData from "./assets/drawings.json";
 
@@ -167,17 +169,54 @@ const App = () => {
         <div className="mb-40 section section2">
           <div class="w-full flex-col section-header">
             {" "}
-            <h2 className="text-white">Work</h2>
+            <h2 className="text-white pl-10">Work</h2>
           </div>
+          <div className="bg-white w-full flex flex-row">
+            <div className="flex flex-col">
+              {" "}
+              <img src={LegacyBG} />
+            </div>
+            <div className="p-20 flex flex-col h-full justify-between">
+              <img style={{ borderRadius: "20px" }} src={JillianGif} />
+              <p className="p-4 pb-6">Recent project using Figma to create designs for new project features and updating React components.</p>
 
-          <Card
+              <button className="bg-emerald-600 drop-shadow-lg text-white py-2 px-4 rounded-full ease-in-out duration-300 hover:bg-green-800">
+                {" "}
+                Go to Figma Project
+              </button>
+            </div>
+          </div>
+          <div className=" w-full flex flex-row bg-['url(assets/ai-tutor-bg-w.png)'] bg-cover bg-center h-64 w-full" style={{background: "rgb(143 141 193)"}}>
+      
+            <div className="py-4 px-24 flex flex-col h-full justify-between z-1000">
+              <img style={{ borderRadius: "10px" }} src={AIss} />
+
+              <button className="bg-purple-800 drop-shadow-lg text-white py-2 px-4 rounded-md ease-in-out duration-300 hover:bg-purple-900">
+                {" "}
+                Go to Figma Project
+              </button>
+            </div>
+            <div className="flex flex-col">
+              {" "}
+              <img src={AIBG} />
+            </div>
+          </div>
+          {/* <Card
             imgSrc={JillianGif}
             imgAlt="lawyer app"
             title="Legacy Architects"
             info="Recent collaborative Figma project for estate planning lawyers."
             link="https://www.figma.com/design/369OzhMUnxL4gwjOdFPaYy/Updated-App-Designs?node-id=225-106834&t=zRooO2IHEXvbEkVG-1"
             buttonText="Go to Figma project"
-          />
+            style={{
+              width: "100%",
+              background: "white",
+              boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
+              padding: "16px",
+              borderRadius: "8px",
+              textAlign: "center",
+            }}
+          /> */}
 
           <Card
             imgSrc={AItutor}
