@@ -23,8 +23,8 @@ import { TypeAnimation } from "react-type-animation";
 import JillianGif from "./assets/legacycodevid.gif";
 import HatStar from "./assets/hatblue.png";
 import LegacyBG from "./assets/legacybg.png";
-import AIBG from "./assets/ai-tutor-bg-w.png";
-import AIss from "./assets/Incorrect.png"
+import AIBG from "./assets/ai-bg-w-h.png";
+import AIss from "./assets/Incorrect.png";
 import imagesData from "./assets/images.json";
 import drawingData from "./assets/drawings.json";
 
@@ -93,11 +93,13 @@ const App = () => {
               />
 
               <p className="pb-10 break-after-right">
-                Hi! I'm Jillian, a dynamic artist, UI/UX developer, and
-                front-end builder who thrives on pushing creative boundaries.
-                I've built this site using React, Illustrator and Figma as well
-                as all the work you see below. Let's create something amazing
-                together!
+                <span className="font-bold"> Hi! I'm Jillian, </span>
+                 a dynamic artist, UI/UX developer, and front-end creator with
+                over a decade of design experience. With a BFA in Fine Art, I
+                thrive on pushing creative boundaries and have recently focused
+                on web design. This site was built using React, Illustrator, and
+                Figma—along with all the work showcased below. Let’s collaborate
+                and create something amazing together!
               </p>
             </div>
             <img className="profile-pic" src={me} alt="My Example" />{" "}
@@ -178,7 +180,10 @@ const App = () => {
             </div>
             <div className="p-20 flex flex-col h-full justify-between">
               <img style={{ borderRadius: "20px" }} src={JillianGif} />
-              <p className="p-4 pb-6">Recent project using Figma to create designs for new project features and updating React components.</p>
+              <p className="p-4 pb-6">
+                Recent project using Figma to create designs for new project
+                features and updating React components.
+              </p>
 
               <button className="bg-emerald-600 drop-shadow-lg text-white py-2 px-4 rounded-full ease-in-out duration-300 hover:bg-green-800">
                 {" "}
@@ -186,20 +191,28 @@ const App = () => {
               </button>
             </div>
           </div>
-          <div className=" w-full flex flex-row bg-['url(assets/ai-tutor-bg-w.png)'] bg-cover bg-center h-64 w-full" style={{background: "rgb(143 141 193)"}}>
-      
+          <div
+            className=" w-full flex flex-row p-4 bg-center border-t-2 border-purple-800"
+            style={{
+              background: "rgb(143 141 193)",
+              backgroundImage: `url(${AIBG})`,
+              backgroundSize: "cover",
+              height: "540px",
+              backgroundRepeat: "no-repeat",
+            }}
+          >
             <div className="py-4 px-24 flex flex-col h-full justify-between z-1000">
-              <img style={{ borderRadius: "10px" }} src={AIss} />
+              <img
+                style={{ borderRadius: "10px", height: "350px" }}
+                src={AIss}
+              />
 
-              <button className="bg-purple-800 drop-shadow-lg text-white py-2 px-4 rounded-md ease-in-out duration-300 hover:bg-purple-900">
+              <button className="bg-white border-purple-800 drop-shadow-lg text-purple-800 py-2 px-4 mt-8 mb-8 rounded-md ease-in-out duration-300 hover:bg-purple-900 hover:text-white">
                 {" "}
                 Go to Figma Project
               </button>
             </div>
-            <div className="flex flex-col">
-              {" "}
-              <img src={AIBG} />
-            </div>
+            <div className="flex flex-col"> </div>
           </div>
           {/* <Card
             imgSrc={JillianGif}
@@ -218,14 +231,14 @@ const App = () => {
             }}
           /> */}
 
-          <Card
+          {/* <Card
             imgSrc={AItutor}
             imgAlt="a cute pictuer of a computer talking about AI"
             title="AI Tutor"
             info="Here are Figma screens and a live link of an AI tutor site, my latest project using chat gpt. I created all the designs, brand aesthetic, and the working front end build. The live link is available in the Figma file. Enjoy!"
             link="https://www.figma.com/design/IFub1w2Bx04gq61DbCnyt5/AI-TUTOR?node-id=37-3088&t=aIfRkgyvpJaP4cUd-1"
             buttonText="Go to Figma project"
-          />
+          /> */}
           <Card
             imgSrc={Boltstack}
             imgAlt="a screenshot of a Boltstack website talking about AI"
