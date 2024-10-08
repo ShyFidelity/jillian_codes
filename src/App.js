@@ -22,11 +22,13 @@ import ResumeJill from "./assets/JillianFitzMaurice_Resume.pdf";
 import { TypeAnimation } from "react-type-animation";
 import JillianGif from "./assets/legacycodevid.gif";
 import HatStar from "./assets/hatblue.png";
-import LegacyBG from "./assets/legacybg.png";
+import LegacyBG from "./assets/legacy-bg-new-01.png";
 import AIBG from "./assets/ai-bg-w-h.png";
 import AIss from "./assets/Incorrect.png";
 import imagesData from "./assets/images.json";
 import drawingData from "./assets/drawings.json";
+import BSbg from "./assets/Boltastack-bg.png";
+import WiBG from "./assets/wonderink-01.png";
 
 const images = require.context("./assets/", false, /\.(png|jpe?g|svg)$/);
 const drawings = require.context("./assets/", false, /\.(png|jpe?g|svg)$/);
@@ -93,11 +95,11 @@ const App = () => {
               />
 
               <p className="pb-10 break-after-right">
-                <span className="font-bold"> Hi! I'm Jillian, </span>
-                 a dynamic artist, UI/UX developer, and front-end creator with
-                over a decade of design experience. With a BFA in Fine Art, I
-                thrive on pushing creative boundaries and have recently focused
-                on web design. This site was built using React, Illustrator, and
+                <span className="font-bold"> Hi! I'm Jillian, </span>a dynamic
+                artist, UI/UX developer, and front-end creator with over a
+                decade of design experience. With a BFA in Fine Art, I thrive on
+                pushing creative boundaries and have recently focused on web
+                design. This site was built using React, Illustrator, and
                 Figma—along with all the work showcased below. Let’s collaborate
                 and create something amazing together!
               </p>
@@ -173,22 +175,34 @@ const App = () => {
             {" "}
             <h2 className="text-white pl-10">Work</h2>
           </div>
-          <div className="bg-white w-full flex flex-row">
-            <div className="flex flex-col">
-              {" "}
-              <img src={LegacyBG} />
-            </div>
-            <div className="p-20 flex flex-col h-full justify-between">
-              <img style={{ borderRadius: "20px" }} src={JillianGif} />
+          <div
+            className="bg-white w-full flex flex-row justify-end items-end "
+            style={{
+              background: "rgb(143 141 193)",
+              backgroundImage: `url(${LegacyBG})`,
+              backgroundSize: "cover",
+              height: "840px",
+              backgroundRepeat: "no-repeat",
+            }}
+          >
+            <div className="flex flex-col"> </div>
+            <div className="p-20 flex flex-col h-full justify-between w-[650px] ">
+              <img
+                style={{ borderRadius: "20px", width: "500px", height: "auto" }}
+                src={JillianGif}
+              />
               <p className="p-4 pb-6">
                 Recent project using Figma to create designs for new project
                 features and updating React components.
               </p>
 
-              <button className="bg-emerald-600 drop-shadow-lg text-white py-2 px-4 rounded-full ease-in-out duration-300 hover:bg-green-800">
-                {" "}
+              <a
+                href="https://www.figma.com/design/369OzhMUnxL4gwjOdFPaYy/Updated-App-Designs?node-id=225-106834&t=zRooO2IHEXvbEkVG-1"
+                target="_blantk"
+                className="bg-emerald-600 drop-shadow-lg text-white py-2 px-4 rounded-full ease-in-out duration-300 hover:bg-green-800 inline-block text-center"
+              >
                 Go to Figma Project
-              </button>
+              </a>
             </div>
           </div>
           <div
@@ -207,13 +221,82 @@ const App = () => {
                 src={AIss}
               />
 
-              <button className="bg-white border-purple-800 drop-shadow-lg text-purple-800 py-2 px-4 mt-8 mb-8 rounded-md ease-in-out duration-300 hover:bg-purple-900 hover:text-white">
-                {" "}
+              <a
+                href="https://www.figma.com/design/IFub1w2Bx04gq61DbCnyt5/AI-TUTOR?node-id=37-3088&t=aIfRkgyvpJaP4cUd-1"
+                target="_blank"
+                className="bg-white border-purple-800 drop-shadow-lg text-purple-800 py-2 px-4 mt-8 mb-8 rounded-md ease-in-out duration-300 hover:bg-purple-900 hover:text-white inline-block text-center"
+              >
                 Go to Figma Project
-              </button>
+              </a>
             </div>
             <div className="flex flex-col"> </div>
           </div>
+
+          <div className="w-full bg-black p-24">
+            <div
+              className="w-100 flex flex-row p-20 bg-center border-t-2 border-purple-800"
+              style={{
+                background: "rgb(143 141 193)",
+                backgroundImage: `url(${BSbg})`,
+                backgroundColor: "rgba(0, 0, 0, 1)",
+                backgroundSize: "1200px",
+                backgroundPosition: "top left", // Set to top-left
+                height: "940px",
+                backgroundRepeat: "no-repeat",
+              }}
+            >
+              <div className="py-4 px-24 w-[650px] flex text-white flex-col justify-end items-end h-full z-1000 ml-auto">
+                <p className="pt-2 ext-right h-[380px]">
+                  "Discover Boltstack.com, where I led marketing efforts, UI/UX,
+                  and front-end development. I created everything on this site
+                  from graphics to functionality and CSS media queries for a
+                  mobile-friendly design. Built on internal low-code software."
+                  <br />
+                  <a
+  className="bg-[#eb9bd5] text-black text-2xl rounded-xl p-6 mt-24 underline"
+  href="https://boltstack-dev.softwarebbd.com/"
+  target="_blank"
+>
+  Go to Boltstack.com
+</a>
+
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="w-full">
+            <div
+              className="w-100 flex flex-row p-20 bg-center border-t-2 border-purple-800"
+              style={{
+                background: "rgb(143 141 193)",
+                backgroundImage: `url(${WiBG})`,
+                backgroundColor: "#fff",
+                backgroundSize: "cover",
+                backgroundPosition: "top left", // Set to top-left
+                height: "1900px",
+                backgroundRepeat: "no-repeat",
+              }}
+            >
+              <div className="p-4  w-[650px] flex flex-col justify-end items-end h-full z-1000 ml-auto">
+                <p className="text-right h-[500px]  bg-[#F0EFE3] rounded-lg p-4">
+                  "WonderInk is a learning management system for leaders,
+                  parents, and students. I revamped the front-end interface to
+                  align with brand recognition, taking the lead in design
+                  decisions. Additionally, I developed the parent portal as a
+                  vital link between parents, students, and youth leaders,
+                  fostering continuous engagement in learning. Username:
+                  jillian@softwarebb.com / Password: Church100!"
+                </p>
+                <br />
+                <button className="bg-blue-900 drop-shadow-lg text-white p-6 rounded-md ease-in-out duration-300 hover:bg-green-800">
+                  {" "}
+                  Go to Website
+                </button>
+              </div>
+            </div>
+          </div>
+
           {/* <Card
             imgSrc={JillianGif}
             imgAlt="lawyer app"
@@ -239,14 +322,14 @@ const App = () => {
             link="https://www.figma.com/design/IFub1w2Bx04gq61DbCnyt5/AI-TUTOR?node-id=37-3088&t=aIfRkgyvpJaP4cUd-1"
             buttonText="Go to Figma project"
           /> */}
-          <Card
+          {/* <Card
             imgSrc={Boltstack}
             imgAlt="a screenshot of a Boltstack website talking about AI"
             title="Boltstack"
             info="Discover Boltstack.com, where I led marketing efforts and front-end development. I created everything on this site from graphics to functionality and CSS media queries for a mobile-friendly design. Built on internal low-code software."
             link="https://boltstack-dev.softwarebbd.com/"
             buttonText="Go to site"
-          />
+          /> */}
 
           <Card
             imgSrc={Edqualis}
