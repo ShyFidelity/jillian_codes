@@ -199,7 +199,7 @@ const App = () => {
               <a
                 href="https://www.figma.com/design/369OzhMUnxL4gwjOdFPaYy/Updated-App-Designs?node-id=225-106834&t=zRooO2IHEXvbEkVG-1"
                 target="_blantk"
-                className="bg-emerald-600 drop-shadow-lg text-white py-2 px-4 rounded-full ease-in-out duration-300 hover:bg-green-800 inline-block text-center"
+                className="bg-emerald-600 drop-shadow-lg text-2xl text-white py-2 px-4 rounded-full ease-in-out duration-300 hover:bg-green-800 inline-block text-center"
               >
                 Go to Figma Project
               </a>
@@ -224,7 +224,7 @@ const App = () => {
               <a
                 href="https://www.figma.com/design/IFub1w2Bx04gq61DbCnyt5/AI-TUTOR?node-id=37-3088&t=aIfRkgyvpJaP4cUd-1"
                 target="_blank"
-                className="bg-white border-purple-800 drop-shadow-lg text-purple-800 py-2 px-4 mt-8 mb-8 rounded-md ease-in-out duration-300 hover:bg-purple-900 hover:text-white inline-block text-center"
+                className="bg-white text-2xl border-purple-800 drop-shadow-lg text-purple-800 py-2 px-4 mt-8 mb-8 rounded-md ease-in-out duration-300 hover:bg-purple-900 hover:text-white inline-block text-center"
               >
                 Go to Figma Project
               </a>
@@ -234,7 +234,7 @@ const App = () => {
 
           <div className="w-full bg-black p-24">
             <div
-              className="w-100 flex flex-row p-20 bg-center border-t-2 border-purple-800"
+              className="w-100 flex flex-row p-20 bg-center"
               style={{
                 background: "rgb(143 141 193)",
                 backgroundImage: `url(${BSbg})`,
@@ -267,7 +267,7 @@ const App = () => {
 
           <div className="w-full">
             <div
-              className="w-100 flex flex-row p-20 bg-center border-t-2 border-purple-800"
+              className="w-100 flex flex-row p-20 bg-center"
               style={{
                 background: "rgb(143 141 193)",
                 backgroundImage: `url(${WiBG})`,
@@ -279,7 +279,7 @@ const App = () => {
               }}
             >
               <div className="p-4  w-[650px] flex flex-col justify-end items-end h-full z-1000 ml-auto">
-                <p className="text-right h-[500px]  bg-[#F0EFE3] rounded-lg p-4">
+                <p className="text-right h-[500px] bg-[#F0EFE3] rounded-lg p-4">
                   "WonderInk is a learning management system for leaders,
                   parents, and students. I revamped the front-end interface to
                   align with brand recognition, taking the lead in design
@@ -289,10 +289,13 @@ const App = () => {
                   jillian@softwarebb.com / Password: Church100!"
                 </p>
                 <br />
-                <button className="bg-blue-900 drop-shadow-lg text-white p-6 rounded-md ease-in-out duration-300 hover:bg-green-800">
-                  {" "}
-                  Go to Website
-                </button>
+                <a
+  className="bg-[#eb9bd5] text-black text-2xl rounded-xl p-6 mt-24 underline"
+  href="https://app.wonderink.org/?"
+  target="_blank"
+>
+  Go to Website... 
+</a>
               </div>
             </div>
           </div>
@@ -331,7 +334,7 @@ const App = () => {
             buttonText="Go to site"
           /> */}
 
-          <Card
+          {/* <Card
             imgSrc={Edqualis}
             imgAlt="a screenshot of a Boltstack website talking about AI"
             title="Edqualis"
@@ -339,16 +342,29 @@ const App = () => {
        Reskinned the entire application on live site to give a more modern look. My case study and live site log in are available to see here."
             link="https://www.figma.com/design/LYvcCqLYk36RPN5SPsIYQW/EdQualis-Case-Study?node-id=0-1&t=4QYqBJPuMpC4UyST-1"
             buttonText="Go to Figma"
-          />
-          <Card
+          /> */}
+          {/* <Card
             imgSrc={WonderInk}
             title="WonderInk Application"
             info="WonderInk is a learning management system for leaders, parents, and students. I revamped the front-end interface to align with brand recognition, taking the lead in design decisions. Additionally, I developed the parent portal as a vital link between parents, students, and youth leaders, fostering continuous engagement in learning. Username: jillian@softwarebb.com / Password: Church100!"
             link="https://app.wonderink.org/?"
             buttonText="Go to Website"
-          />
+          /> */}
 
-          <div className="mt-24">
+          <div className="mt-24 p-24">
+          <div className="flex justify-center">
+            <img className="hat" src={HatStar} alt={"cowboy Hat"} />
+          </div>
+          <div className="my-32">
+            <h3>
+              Thank you for visiting! I’m thrilled to have you here exploring my
+              work. Each project is crafted with creativity and attention to
+              detail, and I hope you enjoy browsing as much as I enjoyed
+              building these experiences. Feel free to reach out if anything
+              sparks your curiosity or if you'd like to collaborate. Let’s
+              create something amazing together!
+            </h3>
+          </div>
             <p>
               I acknowledge that some of my projects may appear to have limited
               documentation, and that’s true to some extent. Many of these sites
@@ -406,12 +422,10 @@ const App = () => {
           </div>
           <div className="my-32">
             <h3>
-              Thank you for visiting! I’m thrilled to have you here exploring my
-              work. Each project is crafted with creativity and attention to
-              detail, and I hope you enjoy browsing as much as I enjoyed
-              building these experiences. Feel free to reach out if anything
-              sparks your curiosity or if you'd like to collaborate. Let’s
-              create something amazing together!
+           303.901.3230
+            </h3>
+            <h3>
+           fitzmauricejillian@gmail.com
             </h3>
           </div>
         </div>
