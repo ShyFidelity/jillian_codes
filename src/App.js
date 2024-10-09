@@ -30,7 +30,8 @@ import drawingData from "./assets/drawings.json";
 import BSbg from "./assets/Boltastack-bg.png";
 import WiBG from "./assets/wiSSnew.png";
 import WiScreen from "./assets/WIchurchtofamily.png";
-import WIlogo from "./assets/WonderInk001.svg"
+import WIlogo from "./assets/WonderInk001.svg";
+import WIgames from "./assets/wonderinkgames.png";
 
 const images = require.context("./assets/", false, /\.(png|jpe?g|svg)$/);
 const drawings = require.context("./assets/", false, /\.(png|jpe?g|svg)$/);
@@ -262,7 +263,7 @@ const App = () => {
               <div className="m-t-10">
                 <a
                   className="bg-[#eb9bd5] text-black rounded-full p-5 underline"
-                  style={{ fontFamily: "Futura", fontSize: "1.8rem",  }}
+                  style={{ fontFamily: "Futura", fontSize: "1.8rem" }}
                   href="https://boltstack-dev.softwarebbd.com/"
                   target="_blank"
                 >
@@ -272,9 +273,9 @@ const App = () => {
             </div>
           </div>
 
-          <div className="w-full  flex flex-col">
+          <div className="w-full flex flex-col flex flex-col">
             <div
-              className="w-100 p-20 bg-center"
+              className="w-100 p-20  border-b-4 border-b-[#82b068]  bg-center"
               style={{
                 background: "rgb(143 141 193)",
                 backgroundImage: `url(${WiBG})`,
@@ -284,49 +285,108 @@ const App = () => {
                 height: "500px",
                 backgroundRepeat: "no-repeat",
               }}
-            >
-               </div>
+            ></div>
 
-
-
-
-               <div className="bg-[#F0EFE3] h-full flex flex-row items-center p-10">
-               <img
-                style={{ borderRadius: "20px", width: "800px", padding: "1rem", height: "auto" }}
+            <div className="bg-[#F0EFE3] border-b-4 border-b-[#82b068] h-full flex flex-row items-center p-10">
+              <img
+                style={{
+                  borderRadius: "20px",
+                  width: "800px",
+                  padding: "1rem",
+                  height: "auto",
+                }}
                 src={WiScreen}
               />
-              <div className="flex flex-col w-1/2 rounded-lg p-8 justify-end items-end">
-              <img
-                style={{ borderRadius: "10px", height: "40px" }}
-                src={WIlogo}
-              />
-                <p className="text-right" 
-                                  style={{ fontFamily: "Nunito", fontWeight:"bold",fontSize: "1.2rem" }}
->
+              <div className="flex flex-col w-1/2 rounded-lg p-8 items-center">
+                <img
+                  style={{ borderRadius: "10px", height: "70px" }}
+                  src={WIlogo}
+                />
+                <p
+                  className="text-center mt-10"
+                  style={{
+                    fontFamily: "Nunito",
+                    fontWeight: "bold",
+                    fontSize: "1.2rem",
+                  }}
+                >
                   WonderInk is a learning management system for leaders,
-                  parents, and students. <br></br>
+                  parents, and students. <br></br>I revamped the front-end
+                  interface to align with brand recognition, taking the lead in
+                  design decisions. <br></br> Demo Upon request.
                   
-                  I revamped the front-end interface to
-                  align with brand recognition, taking the lead in design
-                  decisions. <br></br>Additionally, I developed the parent portal as a
-                  vital link between parents, students, and youth leaders,
-                  fostering continuous engagement in learning. 
-                  I created and designed learning games and graphics. <br></br>
-                  Demo Upon request. 
                 </p>
                 <br />
                 <a
                   className="bg-[#01344f] text-white text-2xl rounded-xl p-6"
-                  style={{ fontFamily: "Nunito", fontWeight:"bold",fontSize: "2rem" }}
+                  style={{
+                    fontFamily: "Nunito",
+                    fontWeight: "bold",
+                    fontSize: "2rem",
+                  }}
                   href="https://app.wonderink.org/?"
                   target="_blank"
                 >
                   Go to Website
                 </a>
               </div>
-              </div>
+            </div>
 
-            
+
+
+
+            <div className="w-full flex flex-col flex flex-col">
+
+            <div className="bg-[#cbe2b2] h-full flex flex-row-reverse items-center p-10">
+              <img
+                style={{
+                  borderRadius: "20px",
+                  width: "600px",
+                  padding: "1rem",
+                  height: "auto",
+                }}
+                src={WIgames}
+              />
+              <div className="flex flex-col w-1/2 rounded-lg p-8 items-center">
+          <h3       style={{
+                    fontFamily: "Nunito",
+                    fontWeight: "bold",
+                    fontSize: "2rem",
+                    textAlign: "left", 
+                    width: "100%"
+                  }}>Game Designs</h3>
+                <p
+                  className="text-left mt-10"
+                  style={{
+                    fontFamily: "Nunito",
+                    fontWeight: "bold",
+                    fontSize: "1.2rem",
+                  }}
+                >
+                 Additionally, I developed the
+                  parent portal as a vital link between parents, students, and
+                  youth leaders, fostering continuous engagement in learning. I
+                  created and designed learning games and graphics. <br></br>
+                  Demo Upon request.
+                </p>
+                <br />
+                <a
+                  className="bg-[#01344f] text-white text-2xl rounded-xl p-6"
+                  style={{
+                    fontFamily: "Nunito",
+                    fontWeight: "bold",
+                    fontSize: "1.2rem",
+                  }}
+                  href="https://xd.adobe.com/view/e0562c42-e263-49f7-885c-66bc7e76b14e-b505/?fullscreen"
+                  target="_blank"
+                >
+                  View in Adobe XD
+                </a>
+              </div>
+            </div>
+            </div>
+
+
           </div>
 
           {/* <Card
