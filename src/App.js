@@ -29,7 +29,8 @@ import imagesData from "./assets/images.json";
 import drawingData from "./assets/drawings.json";
 import BSbg from "./assets/Boltastack-bg.png";
 import WiBG from "./assets/wiSSnew.png";
-import WiScreen from "./assets/WIchurchtofamily.png"
+import WiScreen from "./assets/WIchurchtofamily.png";
+import WIlogo from "./assets/WonderInk001.svg"
 
 const images = require.context("./assets/", false, /\.(png|jpe?g|svg)$/);
 const drawings = require.context("./assets/", false, /\.(png|jpe?g|svg)$/);
@@ -247,9 +248,9 @@ const App = () => {
                 backgroundRepeat: "no-repeat",
               }}
             ></div>
-            <div className="w-1/2 flex text-white flex-col justify-end items-end ml-auto p-3 border-2 border-white rounded-lg	">
+            <div className="w-1/2 h-[600px] flex text-white flex-col justify-end items-end ml-auto p-3 border-white rounded-lg	">
               <p
-                className="pt-2 text-right h-[380px]"
+                className="pt-2 text-right"
                 style={{ fontFamily: "Futura", fontSize: "2rem" }}
               >
                 Discover Boltstack.com, where I led marketing efforts, UI/UX,
@@ -260,8 +261,8 @@ const App = () => {
 
               <div className="m-t-10">
                 <a
-                  className="bg-[#eb9bd5] text-black text-2xl rounded-xl p-6 mt-24 underline"
-                  style={{ fontFamily: "Futura", fontSize: "2rem" }}
+                  className="bg-[#eb9bd5] text-black rounded-full p-5 underline"
+                  style={{ fontFamily: "Futura", fontSize: "1.8rem",  }}
                   href="https://boltstack-dev.softwarebbd.com/"
                   target="_blank"
                 >
@@ -278,7 +279,7 @@ const App = () => {
                 background: "rgb(143 141 193)",
                 backgroundImage: `url(${WiBG})`,
                 backgroundColor: "#fff",
-                backgroundSize: "contain",
+                backgroundSize: "cover",
                 backgroundPosition: "top left", // Set to top-left
                 height: "500px",
                 backgroundRepeat: "no-repeat",
@@ -289,12 +290,16 @@ const App = () => {
 
 
 
-               <div className="bg-[#F0EFE3]">
+               <div className="bg-[#F0EFE3] h-full flex flex-row items-center p-10">
                <img
-                style={{ borderRadius: "20px", width: "500px", height: "auto" }}
+                style={{ borderRadius: "20px", width: "800px", padding: "1rem", height: "auto" }}
                 src={WiScreen}
               />
-              <div className="flex flex-col h-[500px]  rounded-lg p-8 justify-end items-end">
+              <div className="flex flex-col w-1/2 rounded-lg p-8 justify-end items-end">
+              <img
+                style={{ borderRadius: "10px", height: "40px" }}
+                src={WIlogo}
+              />
                 <p className="text-right" 
                                   style={{ fontFamily: "Nunito", fontWeight:"bold",fontSize: "1.2rem" }}
 >
