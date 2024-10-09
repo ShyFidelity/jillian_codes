@@ -28,7 +28,8 @@ import AIss from "./assets/Incorrect.png";
 import imagesData from "./assets/images.json";
 import drawingData from "./assets/drawings.json";
 import BSbg from "./assets/Boltastack-bg.png";
-import WiBG from "./assets/wonderink-01.png";
+import WiBG from "./assets/wiSSnew.png";
+import WiScreen from "./assets/WIchurchtofamily.png"
 
 const images = require.context("./assets/", false, /\.(png|jpe?g|svg)$/);
 const drawings = require.context("./assets/", false, /\.(png|jpe?g|svg)$/);
@@ -232,72 +233,95 @@ const App = () => {
             <div className="flex flex-col"> </div>
           </div>
 
-          <div className="w-full bg-black p-24">
+          <div className="w-full bg-black p-20 flex flex-row border-t-2 border-t-white">
             <div
               className="w-100 flex flex-row p-20 bg-center"
               style={{
                 background: "rgb(143 141 193)",
                 backgroundImage: `url(${BSbg})`,
                 backgroundColor: "rgba(0, 0, 0, 1)",
-                backgroundSize: "1200px",
+                backgroundSize: "contain",
                 backgroundPosition: "top left", // Set to top-left
-                height: "940px",
+                height: "600px",
+                width: "800px",
                 backgroundRepeat: "no-repeat",
               }}
-            >
-              <div className="py-4 px-24 w-[650px] flex text-white flex-col justify-end items-end h-full z-1000 ml-auto">
-                <p className="pt-2 ext-right h-[380px]">
-                  "Discover Boltstack.com, where I led marketing efforts, UI/UX,
-                  and front-end development. I created everything on this site
-                  from graphics to functionality and CSS media queries for a
-                  mobile-friendly design. Built on internal low-code software."
-                  <br />
-                  <a
-  className="bg-[#eb9bd5] text-black text-2xl rounded-xl p-6 mt-24 underline"
-  href="https://boltstack-dev.softwarebbd.com/"
-  target="_blank"
->
-  Go to Boltstack.com
-</a>
+            ></div>
+            <div className="w-1/2 flex text-white flex-col justify-end items-end ml-auto p-3 border-2 border-white rounded-lg	">
+              <p
+                className="pt-2 text-right h-[380px]"
+                style={{ fontFamily: "Futura", fontSize: "2rem" }}
+              >
+                Discover Boltstack.com, where I led marketing efforts, UI/UX,
+                and front-end development. I created everything on this site
+                from graphics to functionality and CSS media queries for a
+                mobile-friendly design. Built on internal low-code software.
+              </p>
 
-                </p>
+              <div className="m-t-10">
+                <a
+                  className="bg-[#eb9bd5] text-black text-2xl rounded-xl p-6 mt-24 underline"
+                  style={{ fontFamily: "Futura", fontSize: "2rem" }}
+                  href="https://boltstack-dev.softwarebbd.com/"
+                  target="_blank"
+                >
+                  Go to Boltstack.com
+                </a>
               </div>
             </div>
           </div>
 
-          <div className="w-full">
+          <div className="w-full  flex flex-col">
             <div
-              className="w-100 flex flex-row p-20 bg-center"
+              className="w-100 p-20 bg-center"
               style={{
                 background: "rgb(143 141 193)",
                 backgroundImage: `url(${WiBG})`,
                 backgroundColor: "#fff",
-                backgroundSize: "cover",
+                backgroundSize: "contain",
                 backgroundPosition: "top left", // Set to top-left
-                height: "1900px",
+                height: "500px",
                 backgroundRepeat: "no-repeat",
               }}
             >
-              <div className="p-4  w-[650px] flex flex-col justify-end items-end h-full z-1000 ml-auto">
-                <p className="text-right h-[500px] bg-[#F0EFE3] rounded-lg p-4">
-                  "WonderInk is a learning management system for leaders,
-                  parents, and students. I revamped the front-end interface to
+               </div>
+
+
+
+
+               <div className="bg-[#F0EFE3]">
+               <img
+                style={{ borderRadius: "20px", width: "500px", height: "auto" }}
+                src={WiScreen}
+              />
+              <div className="flex flex-col h-[500px]  rounded-lg p-8 justify-end items-end">
+                <p className="text-right" 
+                                  style={{ fontFamily: "Nunito", fontWeight:"bold",fontSize: "1.2rem" }}
+>
+                  WonderInk is a learning management system for leaders,
+                  parents, and students. <br></br>
+                  
+                  I revamped the front-end interface to
                   align with brand recognition, taking the lead in design
-                  decisions. Additionally, I developed the parent portal as a
+                  decisions. <br></br>Additionally, I developed the parent portal as a
                   vital link between parents, students, and youth leaders,
-                  fostering continuous engagement in learning. Username:
-                  jillian@softwarebb.com / Password: Church100!"
+                  fostering continuous engagement in learning. 
+                  I created and designed learning games and graphics. <br></br>
+                  Demo Upon request. 
                 </p>
                 <br />
                 <a
-  className="bg-[#eb9bd5] text-black text-2xl rounded-xl p-6 mt-24 underline"
-  href="https://app.wonderink.org/?"
-  target="_blank"
->
-  Go to Website... 
-</a>
+                  className="bg-[#01344f] text-white text-2xl rounded-xl p-6"
+                  style={{ fontFamily: "Nunito", fontWeight:"bold",fontSize: "2rem" }}
+                  href="https://app.wonderink.org/?"
+                  target="_blank"
+                >
+                  Go to Website
+                </a>
               </div>
-            </div>
+              </div>
+
+            
           </div>
 
           {/* <Card
@@ -352,19 +376,19 @@ const App = () => {
           /> */}
 
           <div className="mt-24 p-24">
-          <div className="flex justify-center">
-            <img className="hat" src={HatStar} alt={"cowboy Hat"} />
-          </div>
-          <div className="my-32">
-            <h3>
-              Thank you for visiting! I’m thrilled to have you here exploring my
-              work. Each project is crafted with creativity and attention to
-              detail, and I hope you enjoy browsing as much as I enjoyed
-              building these experiences. Feel free to reach out if anything
-              sparks your curiosity or if you'd like to collaborate. Let’s
-              create something amazing together!
-            </h3>
-          </div>
+            <div className="flex justify-center">
+              <img className="hat" src={HatStar} alt={"cowboy Hat"} />
+            </div>
+            <div className="my-32">
+              <h3>
+                Thank you for visiting! I’m thrilled to have you here exploring
+                my work. Each project is crafted with creativity and attention
+                to detail, and I hope you enjoy browsing as much as I enjoyed
+                building these experiences. Feel free to reach out if anything
+                sparks your curiosity or if you'd like to collaborate. Let’s
+                create something amazing together!
+              </h3>
+            </div>
             <p>
               I acknowledge that some of my projects may appear to have limited
               documentation, and that’s true to some extent. Many of these sites
@@ -421,12 +445,8 @@ const App = () => {
             <img className="hat" src={HatStar} alt={"cowboy Hat"} />
           </div>
           <div className="my-32">
-            <h3>
-           303.901.3230
-            </h3>
-            <h3>
-           fitzmauricejillian@gmail.com
-            </h3>
+            <h3>303.901.3230</h3>
+            <h3>fitzmauricejillian@gmail.com</h3>
           </div>
         </div>
       </Element>
