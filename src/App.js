@@ -179,7 +179,7 @@ const App = () => {
             <h2 className="text-white pl-10">Work</h2>
           </div>
           <div
-            className="bg-white w-full flex flex-row justify-end items-end "
+            className="legacy bg-white w-full flex flex-row justify-end items-end "
             style={{
               background: "rgb(143 141 193)",
               backgroundImage: `url(${LegacyBG})`,
@@ -189,7 +189,7 @@ const App = () => {
             }}
           >
             <div className="flex flex-col"> </div>
-            <div className="p-20 flex flex-col h-full justify-between w-[650px] ">
+            <div className="legacy-child p-20 flex flex-col h-full justify-between w-[650px] ">
               <img
                 style={{ borderRadius: "20px", width: "500px", height: "auto" }}
                 src={JillianGif}
@@ -209,7 +209,7 @@ const App = () => {
             </div>
           </div>
           <div
-            className=" w-full flex flex-row p-4 bg-center border-t-2 border-purple-800"
+            className="AI w-full flex flex-row p-4 bg-center border-t-2 border-purple-800"
             style={{
               background: "rgb(143 141 193)",
               backgroundImage: `url(${AIBG})`,
@@ -218,7 +218,7 @@ const App = () => {
               backgroundRepeat: "no-repeat",
             }}
           >
-            <div className="py-4 px-24 flex flex-col h-full justify-between z-1000">
+            <div className="py-4 px-24 flex flex-col h-full justify-between">
               <img
                 style={{ borderRadius: "10px", height: "350px" }}
                 src={AIss}
@@ -235,7 +235,7 @@ const App = () => {
             <div className="flex flex-col"> </div>
           </div>
 
-          <div className="w-full bg-black p-20 flex flex-row border-t-2 border-t-white">
+          <div className="Boltstack w-full bg-black p-20 flex flex-row border-t-2 border-t-white">
             <div
               className="w-100 flex flex-row p-20 bg-center"
               style={{
@@ -249,7 +249,7 @@ const App = () => {
                 backgroundRepeat: "no-repeat",
               }}
             ></div>
-            <div className="w-1/2 h-[600px] flex text-white flex-col justify-end items-end ml-auto p-3 border-white rounded-lg	">
+            <div className="BS-text w-1/2 h-[600px] flex text-white flex-col justify-end items-end ml-auto p-3 border-white rounded-lg	">
               <p
                 className="pt-2 text-right"
                 style={{ fontFamily: "Futura", fontSize: "2rem" }}
@@ -287,8 +287,9 @@ const App = () => {
               }}
             ></div>
 
-            <div className="bg-[#F0EFE3] border-b-4 border-b-[#82b068] h-full flex flex-row items-center p-10">
+            <div className="WI-one bg-[#F0EFE3] border-b-4 border-b-[#82b068] h-full flex flex-row items-center p-10">
               <img
+              className="WI-img"
                 style={{
                   borderRadius: "20px",
                   width: "800px",
@@ -335,10 +336,12 @@ const App = () => {
 
 
 
-            <div className="w-full flex flex-col flex flex-col">
+            <div className="WI-two w-full flex flex-col flex flex-col">
 
             <div className="bg-[#cbe2b2] h-full flex flex-row-reverse items-center p-10">
               <img
+              className= "WI-img"
+
                 style={{
                   borderRadius: "20px",
                   width: "600px",
@@ -347,7 +350,7 @@ const App = () => {
                 }}
                 src={WIgames}
               />
-              <div className="flex flex-col w-1/2 rounded-lg p-8 items-center">
+              <div className="BS-text flex flex-col w-1/2 rounded-lg p-8 items-center">
           <h3       style={{
                     fontFamily: "Nunito",
                     fontWeight: "bold",
@@ -440,7 +443,7 @@ const App = () => {
             buttonText="Go to Website"
           /> */}
 
-          <div className="mt-24 p-24">
+          <div className="Text p-24">
             <div className="flex justify-center">
               <img className="hat" src={HatStar} alt={"cowboy Hat"} />
             </div>
@@ -454,17 +457,6 @@ const App = () => {
                 create something amazing together!
               </h3>
             </div>
-            <p>
-              I acknowledge that some of my projects may appear to have limited
-              documentation, and that’s true to some extent. Many of these sites
-              were built using a low-code internal design platform, where I
-              handled both front-end development and design work. Due to tight
-              deadlines, much of the process was done on the go. If I were to
-              identify an area for improvement in my workflow, it would be to
-              prioritize more thorough documentation. It’s a valuable aspect of
-              the development process that ensures long-term maintainability and
-              better collaboration.
-            </p>
           </div>
         </div>
       </Element>
