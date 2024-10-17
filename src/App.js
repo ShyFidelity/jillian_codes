@@ -178,7 +178,9 @@ const App = () => {
             {" "}
             <h2 className="text-white pl-10">Work</h2>
           </div>
-          <div
+
+          <div className="weird-cards">
+          {/* <div
             className="legacy bg-white w-full flex flex-row justify-end items-end "
             style={{
               background: "rgb(143 141 193)",
@@ -208,8 +210,8 @@ const App = () => {
                 Go to Figma Project
               </a>
             </div>
-          </div>
-          <div
+          </div> */}
+          {/* <div
             className="AI w-full flex flex-row p-4 bg-center border-t-2 border-purple-800"
             style={{
               background: "rgb(143 141 193)",
@@ -234,9 +236,9 @@ const App = () => {
               </a>
             </div>
             <div className="flex flex-col"> </div>
-          </div>
+          </div> */}
 
-          <div className="Boltstack p-12 w-full bg-black p-5 flex flex-row border-t-2 border-t-white">
+          {/* <div className="Boltstack p-12 w-full bg-black p-5 flex flex-row border-t-2 border-t-white">
             <div
               className="w-100 flex flex-row p-20 bg-center"
               style={{
@@ -272,9 +274,9 @@ const App = () => {
                 </a>
               </div>
             </div>
-          </div>
+          </div> */}
 
-          <div className="w-full flex flex-col flex flex-col">
+          {/* <div className="w-full flex flex-col flex flex-col">
             <div
               className="w-100 p-20  border-b-4 border-b-[#82b068]  bg-center"
               style={{
@@ -389,15 +391,17 @@ const App = () => {
               </div>
             </div>
             </div>
-
+</div> */}
 
           </div>
 
-          {/* <Card
+           <Card
+           backgroundImg={LegacyBG}
             imgSrc={JillianGif}
             imgAlt="lawyer app"
             title="Legacy Architects"
-            info="Recent collaborative Figma project for estate planning lawyers."
+            info="  Recent project using Figma to create designs for new project
+                features and updating React components."
             link="https://www.figma.com/design/369OzhMUnxL4gwjOdFPaYy/Updated-App-Designs?node-id=225-106834&t=zRooO2IHEXvbEkVG-1"
             buttonText="Go to Figma project"
             style={{
@@ -408,26 +412,29 @@ const App = () => {
               borderRadius: "8px",
               textAlign: "center",
             }}
-          /> */}
+          /> 
 
-          {/* <Card
+    <Card
             imgSrc={AItutor}
             imgAlt="a cute pictuer of a computer talking about AI"
             title="AI Tutor"
             info="Here are Figma screens and a live link of an AI tutor site, my latest project using chat gpt. I created all the designs, brand aesthetic, and the working front end build. The live link is available in the Figma file. Enjoy!"
             link="https://www.figma.com/design/IFub1w2Bx04gq61DbCnyt5/AI-TUTOR?node-id=37-3088&t=aIfRkgyvpJaP4cUd-1"
             buttonText="Go to Figma project"
-          /> */}
-          {/* <Card
-            imgSrc={Boltstack}
+          />
+          <Card
+            imgSrc={BSbg}
+          backgroundColor={"#000"}
+          titleStyle={{color:'white'}}
+          infoStyle={{color:'white'}}
             imgAlt="a screenshot of a Boltstack website talking about AI"
             title="Boltstack"
             info="Discover Boltstack.com, where I led marketing efforts and front-end development. I created everything on this site from graphics to functionality and CSS media queries for a mobile-friendly design. Built on internal low-code software."
             link="https://boltstack-dev.softwarebbd.com/"
             buttonText="Go to site"
-          /> */}
+          />
 
-          {/* <Card
+          <Card
             imgSrc={Edqualis}
             imgAlt="a screenshot of a Boltstack website talking about AI"
             title="Edqualis"
@@ -435,14 +442,32 @@ const App = () => {
        Reskinned the entire application on live site to give a more modern look. My case study and live site log in are available to see here."
             link="https://www.figma.com/design/LYvcCqLYk36RPN5SPsIYQW/EdQualis-Case-Study?node-id=0-1&t=4QYqBJPuMpC4UyST-1"
             buttonText="Go to Figma"
-          /> */}
-          {/* <Card
+          />
+     <Card
             imgSrc={WonderInk}
+            backgroundImg={WiBG}
+            insideColor={"#f0f0e9"}
+
             title="WonderInk Application"
-            info="WonderInk is a learning management system for leaders, parents, and students. I revamped the front-end interface to align with brand recognition, taking the lead in design decisions. Additionally, I developed the parent portal as a vital link between parents, students, and youth leaders, fostering continuous engagement in learning. Username: jillian@softwarebb.com / Password: Church100!"
+            info="WonderInk is a learning management system for leaders, parents, and students. I revamped the front-end interface to align with brand recognition, taking the lead in design decisions. Additionally, I developed the parent portal as a vital link between parents, students, and youth leaders, fostering continuous engagement in learning. "
             link="https://app.wonderink.org/?"
-            buttonText="Go to Website"
-          /> */}
+            buttonText="Demo Upon Request"
+          />  
+     <Card
+            
+            imgSrc={WIgames}
+            backgroundColor={"#f0f0e9"}
+            insideColor={"#f0f0e9"}
+
+            title="Game Design"
+            info="      Additionally, I developed the
+                  parent portal as a vital link between parents, students, and
+                  youth leaders, fostering continuous engagement in learning. I
+                  created and designed learning games and graphics. 
+                  Demo Upon request."
+            link="https://app.wonderink.org/?"
+            buttonText="Go to Figma"
+          />  
 
           <div className="Text p-24">
             <div className="flex justify-center">
