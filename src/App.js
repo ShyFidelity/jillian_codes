@@ -201,7 +201,8 @@ const App = () => {
 
               <a
                 href="https://www.figma.com/design/369OzhMUnxL4gwjOdFPaYy/Updated-App-Designs?node-id=225-106834&t=zRooO2IHEXvbEkVG-1"
-                target="_blantk"
+                target="_blank"
+                rel="noreferrer"
                 className="bg-emerald-600 drop-shadow-lg text-2xl text-white py-2 px-4 rounded-full ease-in-out duration-300 hover:bg-green-800 inline-block text-center"
               >
                 Go to Figma Project
@@ -265,7 +266,7 @@ const App = () => {
                   className="bg-[#eb9bd5] text-black rounded-full p-5 underline"
                   style={{ fontFamily: "Futura", fontSize: "1.8rem" }}
                   href="https://boltstack-dev.softwarebbd.com/"
-                  target="_blank"
+                  target="_blank" rel="noreferrer"
                 >
                   Go to Boltstack.com
                 </a>
@@ -326,7 +327,7 @@ const App = () => {
                     fontSize: "2rem",
                   }}
                   href="https://app.wonderink.org/?"
-                  target="_blank"
+                  target="_blank" rel="noreferrer"
                 >
                   Go to Website
                 </a>
@@ -381,7 +382,7 @@ const App = () => {
                     fontSize: "1.2rem",
                   }}
                   href="https://xd.adobe.com/view/e0562c42-e263-49f7-885c-66bc7e76b14e-b505/?fullscreen"
-                  target="_blank"
+                  target="_blank" rel="noreferrer"
                 >
                   View in Adobe XD
                 </a>
