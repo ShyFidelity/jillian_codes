@@ -32,6 +32,7 @@ import WiBG from "./assets/wiSSnew.png";
 import WiScreen from "./assets/WIchurchtofamily.png";
 import WIlogo from "./assets/WonderInk001.svg";
 import WIgames from "./assets/wonderinkgames.png";
+import AiFigma from "./assets/AIfigma.png"
 
 const images = require.context("./assets/", false, /\.(png|jpe?g|svg)$/);
 const drawings = require.context("./assets/", false, /\.(png|jpe?g|svg)$/);
@@ -415,7 +416,7 @@ const App = () => {
           /> 
 
     <Card
-            imgSrc={AItutor}
+            imgSrc={AiFigma}
             imgAlt="a cute pictuer of a computer talking about AI"
             title="AI Tutor"
             info="Here are Figma screens and a live link of an AI tutor site, my latest project using chat gpt. I created all the designs, brand aesthetic, and the working front end build. The live link is available in the Figma file. Enjoy!"
