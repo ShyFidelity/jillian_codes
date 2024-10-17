@@ -33,6 +33,7 @@ import WiScreen from "./assets/WIchurchtofamily.png";
 import WIlogo from "./assets/WonderInk001.svg";
 import WIgames from "./assets/wonderinkgames.png";
 import AiFigma from "./assets/AIfigma.png"
+import AiFigmaBG from "./assets/AIfigmanew.png"
 
 const images = require.context("./assets/", false, /\.(png|jpe?g|svg)$/);
 const drawings = require.context("./assets/", false, /\.(png|jpe?g|svg)$/);
@@ -416,8 +417,9 @@ const App = () => {
           /> 
 
     <Card
-            imgSrc={AiFigma}
-            imgAlt="a cute pictuer of a computer talking about AI"
+            
+            backgroundImg={AiFigmaBG}
+
             title="AI Tutor"
             info="Here are Figma screens and a live link of an AI tutor site, my latest project using chat gpt. I created all the designs, brand aesthetic, and the working front end build. The live link is available in the Figma file. Enjoy!"
             link="https://www.figma.com/design/IFub1w2Bx04gq61DbCnyt5/AI-TUTOR?node-id=37-3088&t=aIfRkgyvpJaP4cUd-1"
@@ -439,8 +441,7 @@ const App = () => {
             imgSrc={Edqualis}
             imgAlt="a screenshot of a Boltstack website talking about AI"
             title="Edqualis"
-            info="Edqualis is an expansive education platform that engages admins, teachers, and students in one place. With the ability to generate content, forms, custom Dashboards, classes, lessons, rubrics, and custom branded UI.
-       Reskinned the entire application on live site to give a more modern look. My case study and live site log in are available to see here."
+            info="Edqualis is a SaaS Learning Managment ssytem that engages admins, teachers, and students in one place. I worked as a front-end dev and independent UX researcher on this project. My case study and live site log in are available to see here."
             link="https://www.figma.com/design/LYvcCqLYk36RPN5SPsIYQW/EdQualis-Case-Study?node-id=0-1&t=4QYqBJPuMpC4UyST-1"
             buttonText="Go to Figma"
           />
@@ -450,7 +451,7 @@ const App = () => {
             insideColor={"#f0f0e9"}
 
             title="WonderInk Application"
-            info="WonderInk is a learning management system for leaders, parents, and students. I revamped the front-end interface to align with brand recognition, taking the lead in design decisions. Additionally, I developed the parent portal as a vital link between parents, students, and youth leaders, fostering continuous engagement in learning. "
+            info="WonderInk is a learning management system for leaders, parents, and students. I revamped the front-end interface to align with brand recognition, taking the lead in design decisions. "
             link="https://app.wonderink.org/?"
             buttonText="Demo Upon Request"
           />  
