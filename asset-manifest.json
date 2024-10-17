@@ -1,16 +1,17 @@
 {
   "files": {
     "main.css": "/jillian_codes/static/css/main.b656c93b.css",
-    "main.js": "/jillian_codes/static/js/main.b769adbe.js",
+    "main.js": "/jillian_codes/static/js/main.c8838351.js",
     "static/js/453.80a3fe8d.chunk.js": "/jillian_codes/static/js/453.80a3fe8d.chunk.js",
     "static/media/legacycodevid.gif": "/jillian_codes/static/media/legacycodevid.f4f6323462c2d04b3d3a.gif",
+    "static/media/edqualis.png": "/jillian_codes/static/media/edqualis.faed68e5b956772cda61.png",
     "static/media/edqualis2.png": "/jillian_codes/static/media/edqualis2.5be6a3c307dc17b31b22.png",
     "static/media/wonderinkgames.png": "/jillian_codes/static/media/wonderinkgames.a965b9cbcfc250c792f6.png",
-    "static/media/edqualis.png": "/jillian_codes/static/media/edqualis.01c10c1bfd7c1a5daa82.png",
     "static/media/wonderink-01.png": "/jillian_codes/static/media/wonderink-01.94d493a5b1acc56d6125.png",
     "static/media/boltstack.png": "/jillian_codes/static/media/boltstack.b69c3d5cb2a1876af175.png",
     "static/media/ai-bg-w-h.png": "/jillian_codes/static/media/ai-bg-w-h.f6362bc355f4f5380888.png",
     "static/media/Boltastack-bg.png": "/jillian_codes/static/media/Boltastack-bg.f97f147f07686df51934.png",
+    "static/media/AIfigmanew.png": "/jillian_codes/static/media/AIfigmanew.fec2caa2019a3f5d8eab.png",
     "static/media/sleep.png": "/jillian_codes/static/media/sleep.15bea4ad71145b690387.png",
     "static/media/tutorbg.png": "/jillian_codes/static/media/tutorbg.7df1cc27ff72bf54ce7f.png",
     "static/media/ai-tutor-bg.png": "/jillian_codes/static/media/ai-tutor-bg.7a26927ff010f6b7931a.png",
@@ -37,6 +38,7 @@
     "static/media/yoga.png": "/jillian_codes/static/media/yoga.1f2afa3e05d88bacb77a.png",
     "static/media/30_GAMES.svg": "/jillian_codes/static/media/30_GAMES.bb6e4eae8ef854dc3f15.svg",
     "static/media/donkey.png": "/jillian_codes/static/media/donkey.5c85a42be4bde9c286f6.png",
+    "static/media/AIfigma.png": "/jillian_codes/static/media/AIfigma.47366d419768ce77de69.png",
     "static/media/docsecurity.svg": "/jillian_codes/static/media/docsecurity.542b8022ece463c57def9faec1dab2a6.svg",
     "static/media/100_DAY_STREAK.png": "/jillian_codes/static/media/100_DAY_STREAK.569141fea5322f09a276.png",
     "static/media/githubcolor.png": "/jillian_codes/static/media/githubcolor.2bee47ca3e08a02f1886.png",
@@ -81,11 +83,11 @@
     "static/media/WonderInk001.svg": "/jillian_codes/static/media/WonderInk001.5e0e59253b187633f9135219fd8595dd.svg",
     "index.html": "/jillian_codes/index.html",
     "main.b656c93b.css.map": "/jillian_codes/static/css/main.b656c93b.css.map",
-    "main.b769adbe.js.map": "/jillian_codes/static/js/main.b769adbe.js.map",
+    "main.c8838351.js.map": "/jillian_codes/static/js/main.c8838351.js.map",
     "453.80a3fe8d.chunk.js.map": "/jillian_codes/static/js/453.80a3fe8d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b656c93b.css",
-    "static/js/main.b769adbe.js"
+    "static/js/main.c8838351.js"
   ]
 }
