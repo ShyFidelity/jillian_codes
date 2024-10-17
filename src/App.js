@@ -113,7 +113,7 @@ const App = () => {
           <div className="icon-section">
             <div>
               <a href="https://github.com/ShyFidelity" target="_blank">
-                <img className="icons" src={Github} />
+                <img className="icons" src={Github} alt="github logo" />
               </a>
             </div>
 
@@ -236,7 +236,7 @@ const App = () => {
             <div className="flex flex-col"> </div>
           </div>
 
-          <div className="Boltstack w-full bg-black p-20 flex flex-row border-t-2 border-t-white">
+          <div className="Boltstack p-12 w-full bg-black p-5 flex flex-row border-t-2 border-t-white">
             <div
               className="w-100 flex flex-row p-20 bg-center"
               style={{
@@ -250,10 +250,10 @@ const App = () => {
                 backgroundRepeat: "no-repeat",
               }}
             ></div>
-            <div className="BS-text w-1/2 h-[600px] flex text-white flex-col justify-end items-end ml-auto p-3 border-white rounded-lg	">
+            <div className="BS-text w-1/2 h-full p-12 flex text-white flex-col justify-between items-end ml-auto p-3 border-white rounded-lg	">
               <p
                 className="pt-2 text-right"
-                style={{ fontFamily: "Futura", fontSize: "2rem" }}
+                style={{ fontFamily: "Futura", fontSize: "1.4rem" }}
               >
                 Discover Boltstack.com, where I led marketing efforts, UI/UX,
                 and front-end development. I created everything on this site
@@ -264,7 +264,7 @@ const App = () => {
               <div className="m-t-10">
                 <a
                   className="bg-[#eb9bd5] text-black rounded-full p-5 underline"
-                  style={{ fontFamily: "Futura", fontSize: "1.8rem" }}
+                  style={{ fontFamily: "Futura", fontSize: "1.5rem" }}
                   href="https://boltstack-dev.softwarebbd.com/"
                   target="_blank" rel="noreferrer"
                 >
