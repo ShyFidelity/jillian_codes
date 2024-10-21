@@ -27,7 +27,7 @@ import AIBG from "./assets/ai-bg-w-h.png";
 import AIss from "./assets/Incorrect.png";
 import imagesData from "./assets/images.json";
 import drawingData from "./assets/drawings.json";
-import BSbg from "./assets/Boltastack-bg.png";
+import BSbg from "./assets/BSnewnew.png";
 import WiBG from "./assets/wonderink-01.png";
 
 const images = require.context("./assets/", false, /\.(png|jpe?g|svg)$/);
@@ -186,9 +186,9 @@ const App = () => {
             }}
           >
             <div className="flex flex-col"> </div>
-            <div className="p-20 flex flex-col h-full justify-between w-[650px] ">
+            <div className="p-12 flex flex-col h-full justify-between w-[650px] ">
               <img
-                style={{ borderRadius: "20px", width: "500px", height: "auto" }}
+                style={{ borderRadius: "20px", width: "600px", height: "auto" }}
                 src={JillianGif}
               />
               <p className="p-4 pb-6">
@@ -239,23 +239,24 @@ const App = () => {
                 background: "rgb(143 141 193)",
                 backgroundImage: `url(${BSbg})`,
                 backgroundColor: "rgba(0, 0, 0, 1)",
-                backgroundSize: "1200px",
+                backgroundSize: "contain",
                 backgroundPosition: "top left", // Set to top-left
                 height: "940px",
                 backgroundRepeat: "no-repeat",
               }}
             >
-              <div className="py-4 px-24 w-[650px] flex text-white flex-col justify-end items-end h-full z-1000 ml-auto">
-                <p className="pt-2 ext-right h-[380px]">
+              <div className="p-8 w-[550px] flex text-white bg-black flex-col justify-end items-end h-auto z-1000 ml-auto">
+                <p className="pt-2">
                   "Discover Boltstack.com, where I led marketing efforts, UI/UX,
                   and front-end development. I created everything on this site
                   from graphics to functionality and CSS media queries for a
                   mobile-friendly design. Built on internal low-code software."
                   <br />
                   <a
-  className="bg-[#eb9bd5] text-black text-2xl rounded-xl p-6 mt-24 underline"
+  className="bg-[#eb9bd5] text-black text-2xl rounded-xl p-6 mt-10 underline"
   href="https://boltstack-dev.softwarebbd.com/"
   target="_blank"
+
 >
   Go to Boltstack.com
 </a>
