@@ -467,8 +467,8 @@ const App = () => {
                   youth leaders, fostering continuous engagement in learning. I
                   created and designed learning games and graphics. 
                   Demo Upon request."
-            link="https://app.wonderink.org/?"
-            buttonText="Go to Figma"
+            link="https://adobe.ly/3NGSw33?"
+            buttonText="Go to Adobe XD"
           />  
 
           <div className="Text p-24">
