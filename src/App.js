@@ -27,8 +27,13 @@ import AIBG from "./assets/ai-bg-w-h.png";
 import AIss from "./assets/Incorrect.png";
 import imagesData from "./assets/images.json";
 import drawingData from "./assets/drawings.json";
-import BSbg from "./assets/BSnewnew.png";
-import WiBG from "./assets/wonderink-01.png";
+import BSbg from "./assets/Boltastack-bg.png";
+import WiBG from "./assets/wiSSnew.png";
+import WiScreen from "./assets/WIchurchtofamily.png";
+import WIlogo from "./assets/WonderInk001.svg";
+import WIgames from "./assets/wonderinkgames.png";
+import AiFigma from "./assets/AIfigma.png"
+import AiFigmaBG from "./assets/AIfigmanew.png"
 
 const images = require.context("./assets/", false, /\.(png|jpe?g|svg)$/);
 const drawings = require.context("./assets/", false, /\.(png|jpe?g|svg)$/);
@@ -110,7 +115,7 @@ const App = () => {
           <div className="icon-section">
             <div>
               <a href="https://github.com/ShyFidelity" target="_blank">
-                <img className="icons" src={Github} />
+                <img className="icons" src={Github} alt="github logo" />
               </a>
             </div>
 
@@ -175,8 +180,10 @@ const App = () => {
             {" "}
             <h2 className="text-white pl-10">Work</h2>
           </div>
-          <div
-            className="bg-white w-full flex flex-row justify-end items-end "
+
+          <div className="weird-cards">
+          {/* <div
+            className="legacy bg-white w-full flex flex-row justify-end items-end "
             style={{
               background: "rgb(143 141 193)",
               backgroundImage: `url(${LegacyBG})`,
@@ -186,7 +193,7 @@ const App = () => {
             }}
           >
             <div className="flex flex-col"> </div>
-            <div className="p-12 flex flex-col h-full justify-between w-[650px] ">
+            <div className="legacy-child p-20 flex flex-col h-full justify-between w-[650px] ">
               <img
                 style={{ borderRadius: "20px", width: "600px", height: "auto" }}
                 src={JillianGif}
@@ -198,15 +205,16 @@ const App = () => {
 
               <a
                 href="https://www.figma.com/design/369OzhMUnxL4gwjOdFPaYy/Updated-App-Designs?node-id=225-106834&t=zRooO2IHEXvbEkVG-1"
-                target="_blantk"
+                target="_blank"
+                rel="noreferrer"
                 className="bg-emerald-600 drop-shadow-lg text-2xl text-white py-2 px-4 rounded-full ease-in-out duration-300 hover:bg-green-800 inline-block text-center"
               >
                 Go to Figma Project
               </a>
             </div>
-          </div>
-          <div
-            className=" w-full flex flex-row p-4 bg-center border-t-2 border-purple-800"
+          </div> */}
+          {/* <div
+            className="AI w-full flex flex-row p-4 bg-center border-t-2 border-purple-800"
             style={{
               background: "rgb(143 141 193)",
               backgroundImage: `url(${AIBG})`,
@@ -215,7 +223,7 @@ const App = () => {
               backgroundRepeat: "no-repeat",
             }}
           >
-            <div className="py-4 px-24 flex flex-col h-full justify-between z-1000">
+            <div className="py-4 px-24 flex flex-col h-full justify-between">
               <img
                 style={{ borderRadius: "10px", height: "350px" }}
                 src={AIss}
@@ -230,9 +238,9 @@ const App = () => {
               </a>
             </div>
             <div className="flex flex-col"> </div>
-          </div>
+          </div> */}
 
-          <div className="w-full bg-black p-24">
+          {/* <div className="Boltstack p-12 w-full bg-black p-5 flex flex-row border-t-2 border-t-white">
             <div
               className="w-100 flex flex-row p-20 bg-center"
               style={{
@@ -241,71 +249,161 @@ const App = () => {
                 backgroundColor: "rgba(0, 0, 0, 1)",
                 backgroundSize: "contain",
                 backgroundPosition: "top left", // Set to top-left
-                height: "940px",
+                height: "600px",
+                width: "800px",
                 backgroundRepeat: "no-repeat",
               }}
-            >
-              <div className="p-8 w-[550px] flex text-white bg-black flex-col justify-end items-end h-auto z-1000 ml-auto">
-                <p className="pt-2">
-                  "Discover Boltstack.com, where I led marketing efforts, UI/UX,
-                  and front-end development. I created everything on this site
-                  from graphics to functionality and CSS media queries for a
-                  mobile-friendly design. Built on internal low-code software."
-                  <br />
-                  <a
-  className="bg-[#eb9bd5] text-black text-2xl rounded-xl p-6 mt-10 underline"
-  href="https://boltstack-dev.softwarebbd.com/"
-  target="_blank"
+            ></div>
+            <div className="BS-text w-1/2 h-full p-12 flex text-white flex-col justify-between items-end ml-auto p-3 border-white rounded-lg	">
+              <p
+                className="pt-2 text-right"
+                style={{ fontFamily: "Futura", fontSize: "1.4rem" }}
+              >
+                Discover Boltstack.com, where I led marketing efforts, UI/UX,
+                and front-end development. I created everything on this site
+                from graphics to functionality and CSS media queries for a
+                mobile-friendly design. Built on internal low-code software.
+              </p>
 
->
-  Go to Boltstack.com
-</a>
-
-                </p>
+              <div className="m-t-10">
+                <a
+                  className="bg-[#eb9bd5] text-black rounded-full p-5 underline"
+                  style={{ fontFamily: "Futura", fontSize: "1.5rem" }}
+                  href="https://boltstack-dev.softwarebbd.com/"
+                  target="_blank" rel="noreferrer"
+                >
+                  Go to Boltstack.com
+                </a>
               </div>
             </div>
-          </div>
+          </div> */}
 
-          <div className="w-full">
+          {/* <div className="w-full flex flex-col flex flex-col">
             <div
-              className="w-100 flex flex-row p-20 bg-center"
+              className="w-100 p-20  border-b-4 border-b-[#82b068]  bg-center"
               style={{
                 background: "rgb(143 141 193)",
                 backgroundImage: `url(${WiBG})`,
                 backgroundColor: "#fff",
                 backgroundSize: "cover",
                 backgroundPosition: "top left", // Set to top-left
-                height: "1900px",
+                height: "500px",
                 backgroundRepeat: "no-repeat",
               }}
-            >
-              <div className="p-4  w-[650px] flex flex-col justify-end items-end h-full z-1000 ml-auto">
-                <p className="text-right h-[500px] bg-[#F0EFE3] rounded-lg p-4">
-                  "WonderInk is a learning management system for leaders,
-                  parents, and students. I revamped the front-end interface to
-                  align with brand recognition, taking the lead in design
-                  decisions. Additionally, I developed the parent portal as a
-                  vital link between parents, students, and youth leaders,
-                  fostering continuous engagement in learning. Username:
-                  jillian@softwarebb.com / Password: Church100!"
+            ></div>
+
+            <div className="WI-one bg-[#F0EFE3] border-b-4 border-b-[#82b068] h-full flex flex-row items-center p-10">
+              <img
+              className="WI-img"
+                style={{
+                  borderRadius: "20px",
+                  width: "800px",
+                  padding: "1rem",
+                  height: "auto",
+                }}
+                src={WiScreen}
+              />
+              <div className="flex flex-col w-1/2 rounded-lg p-8 items-center">
+                <img
+                  style={{ borderRadius: "10px", height: "70px" }}
+                  src={WIlogo}
+                />
+                <p
+                  className="text-center mt-10"
+                  style={{
+                    fontFamily: "Nunito",
+                    fontWeight: "bold",
+                    fontSize: "1.2rem",
+                  }}
+                >
+                  WonderInk is a learning management system for leaders,
+                  parents, and students. <br></br>I revamped the front-end
+                  interface to align with brand recognition, taking the lead in
+                  design decisions. <br></br> Demo Upon request.
+                  
                 </p>
                 <br />
                 <a
-  className="bg-[#eb9bd5] text-black text-2xl rounded-xl p-6 mt-24 underline"
-  href="https://app.wonderink.org/?"
-  target="_blank"
->
-  Go to Website... 
-</a>
+                  className="bg-[#01344f] text-white text-2xl rounded-xl p-6"
+                  style={{
+                    fontFamily: "Nunito",
+                    fontWeight: "bold",
+                    fontSize: "2rem",
+                  }}
+                  href="https://app.wonderink.org/?"
+                  target="_blank" rel="noreferrer"
+                >
+                  Go to Website
+                </a>
               </div>
             </div>
+
+
+
+
+            <div className="WI-two w-full flex flex-col flex flex-col">
+
+            <div className="bg-[#cbe2b2] h-full flex flex-row-reverse items-center p-10">
+              <img
+              className= "WI-img"
+
+                style={{
+                  borderRadius: "20px",
+                  width: "600px",
+                  padding: "1rem",
+                  height: "auto",
+                }}
+                src={WIgames}
+              />
+              <div className="BS-text flex flex-col w-1/2 rounded-lg p-8 items-center">
+          <h3       style={{
+                    fontFamily: "Nunito",
+                    fontWeight: "bold",
+                    fontSize: "2rem",
+                    textAlign: "left", 
+                    width: "100%"
+                  }}>Game Designs</h3>
+                <p
+                  className="text-left mt-10"
+                  style={{
+                    fontFamily: "Nunito",
+                    fontWeight: "bold",
+                    fontSize: "1.2rem",
+                  }}
+                >
+                 Additionally, I developed the
+                  parent portal as a vital link between parents, students, and
+                  youth leaders, fostering continuous engagement in learning. I
+                  created and designed learning games and graphics. <br></br>
+                  Demo Upon request.
+                </p>
+                <br />
+                <a
+                  className="bg-[#01344f] text-white text-2xl rounded-xl p-6"
+                  style={{
+                    fontFamily: "Nunito",
+                    fontWeight: "bold",
+                    fontSize: "1.2rem",
+                  }}
+                  href="https://xd.adobe.com/view/e0562c42-e263-49f7-885c-66bc7e76b14e-b505/?fullscreen"
+                  target="_blank" rel="noreferrer"
+                >
+                  View in Adobe XD
+                </a>
+              </div>
+            </div>
+            </div>
+</div> */}
+
           </div>
 
-          {/* <Card
+           <Card
+           backgroundImg={LegacyBG}
             imgSrc={JillianGif}
             imgAlt="lawyer app"
             title="Legacy Architects"
-            info="Recent collaborative Figma project for estate planning lawyers."
+            info="  Recent project using Figma to create designs for new project
+                features and updating React components."
             link="https://www.figma.com/design/369OzhMUnxL4gwjOdFPaYy/Updated-App-Designs?node-id=225-106834&t=zRooO2IHEXvbEkVG-1"
             buttonText="Go to Figma project"
             style={{
@@ -316,67 +414,77 @@ const App = () => {
               borderRadius: "8px",
               textAlign: "center",
             }}
-          /> */}
+          /> 
 
-          {/* <Card
-            imgSrc={AItutor}
-            imgAlt="a cute pictuer of a computer talking about AI"
+    <Card
+            
+            backgroundImg={AiFigmaBG}
+
             title="AI Tutor"
             info="Here are Figma screens and a live link of an AI tutor site, my latest project using chat gpt. I created all the designs, brand aesthetic, and the working front end build. The live link is available in the Figma file. Enjoy!"
             link="https://www.figma.com/design/IFub1w2Bx04gq61DbCnyt5/AI-TUTOR?node-id=37-3088&t=aIfRkgyvpJaP4cUd-1"
             buttonText="Go to Figma project"
-          /> */}
-          {/* <Card
-            imgSrc={Boltstack}
+          />
+          <Card
+            imgSrc={BSbg}
+          backgroundColor={"#000"}
+          titleStyle={{color:'white'}}
+          infoStyle={{color:'white'}}
             imgAlt="a screenshot of a Boltstack website talking about AI"
             title="Boltstack"
             info="Discover Boltstack.com, where I led marketing efforts and front-end development. I created everything on this site from graphics to functionality and CSS media queries for a mobile-friendly design. Built on internal low-code software."
             link="https://boltstack-dev.softwarebbd.com/"
             buttonText="Go to site"
-          /> */}
+          />
 
-          {/* <Card
+          <Card
             imgSrc={Edqualis}
             imgAlt="a screenshot of a Boltstack website talking about AI"
             title="Edqualis"
-            info="Edqualis is an expansive education platform that engages admins, teachers, and students in one place. With the ability to generate content, forms, custom Dashboards, classes, lessons, rubrics, and custom branded UI.
-       Reskinned the entire application on live site to give a more modern look. My case study and live site log in are available to see here."
+            info="Edqualis is a SaaS Learning Managment ssytem that engages admins, teachers, and students in one place. I worked as a front-end dev and independent UX researcher on this project. My case study and live site log in are available to see here."
             link="https://www.figma.com/design/LYvcCqLYk36RPN5SPsIYQW/EdQualis-Case-Study?node-id=0-1&t=4QYqBJPuMpC4UyST-1"
             buttonText="Go to Figma"
-          /> */}
-          {/* <Card
+          />
+     <Card
             imgSrc={WonderInk}
-            title="WonderInk Application"
-            info="WonderInk is a learning management system for leaders, parents, and students. I revamped the front-end interface to align with brand recognition, taking the lead in design decisions. Additionally, I developed the parent portal as a vital link between parents, students, and youth leaders, fostering continuous engagement in learning. Username: jillian@softwarebb.com / Password: Church100!"
-            link="https://app.wonderink.org/?"
-            buttonText="Go to Website"
-          /> */}
+            backgroundImg={WiBG}
+            insideColor={"#f0f0e9"}
 
-          <div className="mt-24 p-24">
-          <div className="flex justify-center">
-            <img className="hat" src={HatStar} alt={"cowboy Hat"} />
-          </div>
-          <div className="my-32">
-            <h3>
-              Thank you for visiting! I’m thrilled to have you here exploring my
-              work. Each project is crafted with creativity and attention to
-              detail, and I hope you enjoy browsing as much as I enjoyed
-              building these experiences. Feel free to reach out if anything
-              sparks your curiosity or if you'd like to collaborate. Let’s
-              create something amazing together!
-            </h3>
-          </div>
-            <p>
-              I acknowledge that some of my projects may appear to have limited
-              documentation, and that’s true to some extent. Many of these sites
-              were built using a low-code internal design platform, where I
-              handled both front-end development and design work. Due to tight
-              deadlines, much of the process was done on the go. If I were to
-              identify an area for improvement in my workflow, it would be to
-              prioritize more thorough documentation. It’s a valuable aspect of
-              the development process that ensures long-term maintainability and
-              better collaboration.
-            </p>
+            title="WonderInk Application"
+            info="WonderInk is a learning management system for leaders, parents, and students. I revamped the front-end interface to align with brand recognition, taking the lead in design decisions. "
+            link="https://app.wonderink.org/?"
+            buttonText="Demo Upon Request"
+          />  
+     <Card
+            
+            imgSrc={WIgames}
+            backgroundColor={"#f0f0e9"}
+            insideColor={"#f0f0e9"}
+
+            title="Game Design"
+            info="      Additionally, I developed the
+                  parent portal as a vital link between parents, students, and
+                  youth leaders, fostering continuous engagement in learning. I
+                  created and designed learning games and graphics. 
+                  Demo Upon request."
+            link="https://app.wonderink.org/?"
+            buttonText="Go to Figma"
+          />  
+
+          <div className="Text p-24">
+            <div className="flex justify-center">
+              <img className="hat" src={HatStar} alt={"cowboy Hat"} />
+            </div>
+            <div className="my-32">
+              <h3>
+                Thank you for visiting! I’m thrilled to have you here exploring
+                my work. Each project is crafted with creativity and attention
+                to detail, and I hope you enjoy browsing as much as I enjoyed
+                building these experiences. Feel free to reach out if anything
+                sparks your curiosity or if you'd like to collaborate. Let’s
+                create something amazing together!
+              </h3>
+            </div>
           </div>
         </div>
       </Element>
@@ -422,12 +530,8 @@ const App = () => {
             <img className="hat" src={HatStar} alt={"cowboy Hat"} />
           </div>
           <div className="my-32">
-            <h3>
-           303.901.3230
-            </h3>
-            <h3>
-           fitzmauricejillian@gmail.com
-            </h3>
+            <h3>303.901.3230</h3>
+            <h3>fitzmauricejillian@gmail.com</h3>
           </div>
         </div>
       </Element>
