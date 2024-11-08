@@ -34,6 +34,10 @@ import WIlogo from "./assets/WonderInk001.svg";
 import WIgames from "./assets/wonderinkgames.png";
 import AiFigma from "./assets/AIfigma.png"
 import AiFigmaBG from "./assets/AIfigmanew.png"
+import laptop from "./assets/laptop.png"
+import DU from "./assets/du.svg"
+import MIAD from "./assets/miadwhite.png"
+
 
 const images = require.context("./assets/", false, /\.(png|jpe?g|svg)$/);
 const drawings = require.context("./assets/", false, /\.(png|jpe?g|svg)$/);
@@ -75,44 +79,88 @@ const App = () => {
       </nav>
 
       {/* Page Sections */}
+      <Element name="section5" className="bg-[#0d001e]">
+        <div className="w-full">
+          <div className=" columns-2 pt-40">     
+            <div className="p-20">
+          <TypeAnimation
+                className="type-anim"
+                sequence={[
+                  "Hi- Jillian, good to meet you",
+                  500,
+                  "Glad ya made it, sorry about the mess haha",
+                  500,
+                  "Can I answer any of your questions here?",
+                  500,
+                  "...",
+                  500,
+            
+                ]}
+                style={{ fontSize: "2.6rem", color: "#d2d7fa82" }}
+                repeat={Infinity}
+                speed={10}
+                deletionSpeed={8}
+              />
+            
+            </div>
+          <img className="round-lg" src={laptop} alt="My Example" />{" "}
+
+            <div>
+           
+     
+              {/* <p className="pb-10 break-after-right">
+                <span className="font-bold"> Hi! I'm Jillian, </span>a dynamic
+                artist, UI/UX designer, and front-end developer with over a
+                decade of design experience. Always up for challenging the norm, and allowing for design to be both clean and messy. This site was built using React, Illustrator, and
+                Figma—along with all the work showcased below.
+              </p> */}
+            </div>
+          </div>
+
+          <div className="h-[12px] w-full bg-[#cd9da0]">
+   
+    </div>
+    <div className="h-[120px] p-10 w-full bg-black flex items-center">
+    
+    
+    <div class="scroll-container">
+  <div class="scroll-content">
+    <img className="w-auto h-48" src={DU} alt="DU" />{" "}
+    <img className="w-auto h-[60px]"src={MIAD}></img>{" "}
+
+    <img className="w-auto h-[60px]"src={Mouse}></img>{" "}
+
+</div>
+</div>
+   </div>
+    
+        </div>
+      </Element>
+
       <Element name="section1" className="section section1-bg section1">
         <div className="child-section">
           <div className="container columns-2 inner-child-section">
-            <div>
-              <TypeAnimation
-                className="type-anim"
-                sequence={[
-                  "Howdy",
-                  500,
-                  "Hello",
-                  500,
-                  "Hey There",
-                  500,
-                  "¡Hola!",
-                  500,
-                  "Bonjour",
-                  500,
-                ]}
-                style={{ fontSize: "2.6rem", color: "#10129c" }}
-                repeat={Infinity}
-                speed={2}
-                deletionSpeed={10}
-              />
 
-              <p className="pb-10 break-after-right">
+            <div>
+    
+               <div style={{ position: 'relative' }}>
+
+      <div style={{ position: 'absolute', top: '0', left: '0', zIndex: 1 }}>
+        {/* Your content goes here */}
+        <img className="h-[450px] w-full"src={Mouse}></img>
+      </div>
+    </div>
+
+              {/* <p className="pb-10 break-after-right">
                 <span className="font-bold"> Hi! I'm Jillian, </span>a dynamic
-                artist, UI/UX developer, and front-end creator with over a
-                decade of design experience. With a BFA in Fine Art, I thrive on
-                pushing creative boundaries and have recently focused on web
-                design. This site was built using React, Illustrator, and
-                Figma—along with all the work showcased below. Let’s collaborate
-                and create something amazing together!
-              </p>
+                artist, UI/UX designer, and front-end developer with over a
+                decade of design experience. Always up for challenging the norm, and allowing for design to be both clean and messy. This site was built using React, Illustrator, and
+                Figma—along with all the work showcased below.
+              </p> */}
             </div>
-            <img className="profile-pic" src={me} alt="My Example" />{" "}
           </div>
 
-          <div className="icon-section">
+          <div className="icon-section gap-20">
             <div>
               <a href="https://github.com/ShyFidelity" target="_blank">
                 <img className="icons" src={Github} alt="github logo" />
