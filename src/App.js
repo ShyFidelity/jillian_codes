@@ -37,8 +37,8 @@ import AiFigmaBG from "./assets/AIfigmanew.png";
 import laptop from "./assets/laptop.png";
 import DU from "./assets/du.svg";
 import MIAD from "./assets/miadwhite.png";
-import UChi from ".assets/UChi.png";
-
+import UChi from "./assets/UChi.png";
+import idea from "./assets/ideajill.png";
 
 const images = require.context("./assets/", false, /\.(png|jpe?g|svg)$/);
 const drawings = require.context("./assets/", false, /\.(png|jpe?g|svg)$/);
@@ -82,9 +82,9 @@ const App = () => {
       {/* Page Sections */}
       <Element name="section5" className="bg-[#0d001e]">
         <div className="w-full">
-          <div className=" columns-2 pt-40">     
+          <div className=" columns-2 pt-40">
             <div className="p-20">
-          <TypeAnimation
+              <TypeAnimation
                 className="type-anim"
                 sequence={[
                   "Hi- Jillian, good to meet you",
@@ -95,20 +95,15 @@ const App = () => {
                   500,
                   "...",
                   500,
-            
                 ]}
                 style={{ fontSize: "2.6rem", color: "#d2d7fa82" }}
                 repeat={Infinity}
                 speed={10}
                 deletionSpeed={8}
               />
-            
             </div>
-          <img className="round-lg" src={laptop} alt="My Example" />{" "}
-
+            <img className="round-lg" src={laptop} alt="My Example" />{" "}
             <div>
-           
-     
               {/* <p className="pb-10 break-after-right">
                 <span className="font-bold"> Hi! I'm Jillian, </span>a dynamic
                 artist, UI/UX designer, and front-end developer with over a
@@ -118,40 +113,75 @@ const App = () => {
             </div>
           </div>
 
-          <div className="h-[12px] w-full bg-[#cd9da0]">
-   
-    </div>
-    <div className="h-[120px] p-10 w-full bg-black flex items-center">
-    
-    
-    <div class="scroll-container">
-  <div class="scroll-content">
-    <img className="w-auto h-48" src={DU} alt="DU" />
-    <img className="w-[60px] h-[60px]"src={MIAD}></img>
+          <div className="h-[4px] w-full bg-[#cd9da0]"></div>
+          <div className="h-[1px] w-full bg-[#55242f]"></div>
+          <div className="h-[2px] w-full bg-[#cd9da0]"></div>
+          <div className="h-[1px] w-full bg-[#55242f]"></div>
 
-    <img className="w-[80px] h-[60px]"src={Mouse}></img>
-    <img className="w-[80px] h-[60px]"src={UChi}></img>
+          <div className="h-[2px] w-full bg-[#cd9da0]"></div>
+          <div className="h-[4px] w-full bg-[#cd9da0]"></div>
+          <div className="h-[1px] w-full bg-[#55242f]"></div>
+          <div className="h-[8px] w-full bg-[#cd9da0]"></div>
+          <div className="h-[3px] w-full bg-[#55242f]"></div>
+          <div className="h-[2px] w-full bg-[#cd9da0]"></div>
+          <div className="h-[4px] w-full bg-[#cd9da0]"></div>
+          <div className="h-[6px] w-full bg-[#55242f]"></div>
+          <div className="h-[18px] w-full bg-[#cd9da0]"></div>
+          <div className="h-[38px] w-full bg-[#55242f]"></div>
 
-</div>
-</div>
-   </div>
-    
+          <div className="h-[18px] w-full bg-[#cd9da0]"></div>
+
+          <div className="h-[120px] p-10 w-full bg-black flex items-center">
+            <div class="scroll-container">
+              <div class="scroll-content">
+                <img className="w-auto h-48" src={DU} alt="DU" />
+                <img className="w-[60px] h-[40px]" src={MIAD}></img>
+
+                <img className="w-[80px] h-[50px]" src={Mouse}></img>
+                <img className="w-[80px] h-[50px]" src={UChi}></img>
+              </div>
+            </div>
+          </div>
+          <div className="p-20 flex flex-row column-2">
+            <img
+              className="round-lg w-auto h-[350px]"
+              src={idea}
+              alt="My Example"
+            />{" "}
+            <div className="w-full px-20">
+            <TypeAnimation
+  className="type-anim"
+  sequence={[
+    "The day was thick with questions, the kind that stick to your skin like smoke from a cheap cigar. I leaned back, letting my mind slip into that familiar place between shadow and light. Why—that's the thing I can't shake. Not the how or the what, but the why. I think about it like a puzzle, each piece fitting so perfectly that you almost forget there’s a design behind it. See, it’s gotta work so seamlessly, no one even knows it’s software. Invisible, like it’s always been there. Like it’s supposed to be. Every click, every color, every line—none of it by accident. Every decision matters, like setting the scene for a story only the user knows they’re in. That’s the trick, the art. Getting it right without anyone ever seeing the strings."
+  ]}
+  style={{ fontSize: "1.2rem", color: "#d2d7fa82" }}
+  repeat={Infinity}
+  speed={28}
+  deletionSpeed={8}
+/>
+
+            </div>
+          </div>
         </div>
       </Element>
 
-      <Element name="section1" className="section section1-bg section1">
+      <Element name="section1" className="section bg-black p-20">
         <div className="child-section">
-          <div className="container columns-2 inner-child-section">
-
+          <div className=" columns-2 inner-child-section">
             <div>
-    
-               <div style={{ position: 'relative' }}>
-
-      <div style={{ position: 'absolute', top: '0', left: '0', zIndex: 1 }}>
-        {/* Your content goes here */}
-        <img className="h-[450px] w-full"src={Mouse}></img>
-      </div>
-    </div>
+              <div style={{ position: "relative" }}>
+                <div
+                  style={{
+                    position: "absolute",
+                    top: "0",
+                    left: "0",
+                    zIndex: 1,
+                  }}
+                >
+                  {/* Your content goes here */}
+                  <img className="h-[450px] w-full" src={Mouse}></img>
+                </div>
+              </div>
 
               {/* <p className="pb-10 break-after-right">
                 <span className="font-bold"> Hi! I'm Jillian, </span>a dynamic
@@ -232,7 +262,7 @@ const App = () => {
           </div>
 
           <div className="weird-cards">
-          {/* <div
+            {/* <div
             className="legacy bg-white w-full flex flex-row justify-end items-end "
             style={{
               background: "rgb(143 141 193)",
@@ -263,7 +293,7 @@ const App = () => {
               </a>
             </div>
           </div> */}
-          {/* <div
+            {/* <div
             className="AI w-full flex flex-row p-4 bg-center border-t-2 border-purple-800"
             style={{
               background: "rgb(143 141 193)",
@@ -290,7 +320,7 @@ const App = () => {
             <div className="flex flex-col"> </div>
           </div> */}
 
-          {/* <div className="Boltstack p-12 w-full bg-black p-5 flex flex-row border-t-2 border-t-white">
+            {/* <div className="Boltstack p-12 w-full bg-black p-5 flex flex-row border-t-2 border-t-white">
             <div
               className="w-100 flex flex-row p-20 bg-center"
               style={{
@@ -328,7 +358,7 @@ const App = () => {
             </div>
           </div> */}
 
-          {/* <div className="w-full flex flex-col flex flex-col">
+            {/* <div className="w-full flex flex-col flex flex-col">
             <div
               className="w-100 p-20  border-b-4 border-b-[#82b068]  bg-center"
               style={{
@@ -444,11 +474,10 @@ const App = () => {
             </div>
             </div>
 </div> */}
-
           </div>
 
-           <Card
-           backgroundImg={LegacyBG}
+          <Card
+            backgroundImg={LegacyBG}
             imgSrc={JillianGif}
             imgAlt="lawyer app"
             title="Legacy Architects"
@@ -464,12 +493,10 @@ const App = () => {
               borderRadius: "8px",
               textAlign: "center",
             }}
-          /> 
+          />
 
-    <Card
-            
+          <Card
             backgroundImg={AiFigmaBG}
-
             title="AI Tutor"
             info="Here are Figma screens and a live link of an AI tutor site, my latest project using chat gpt. I created all the designs, brand aesthetic, and the working front end build. The live link is available in the Figma file. Enjoy!"
             link="https://www.figma.com/design/IFub1w2Bx04gq61DbCnyt5/AI-TUTOR?node-id=37-3088&t=aIfRkgyvpJaP4cUd-1"
@@ -477,9 +504,9 @@ const App = () => {
           />
           <Card
             imgSrc={BSbg}
-          backgroundColor={"#000"}
-          titleStyle={{color:'white'}}
-          infoStyle={{color:'white'}}
+            backgroundColor={"#000"}
+            titleStyle={{ color: "white" }}
+            infoStyle={{ color: "white" }}
             imgAlt="a screenshot of a Boltstack website talking about AI"
             title="Boltstack"
             info="Discover Boltstack.com, where I led marketing efforts and front-end development. I created everything on this site from graphics to functionality and CSS media queries for a mobile-friendly design. Built on internal low-code software."
@@ -495,22 +522,19 @@ const App = () => {
             link="https://www.figma.com/design/LYvcCqLYk36RPN5SPsIYQW/EdQualis-Case-Study?node-id=0-1&t=4QYqBJPuMpC4UyST-1"
             buttonText="Go to Figma"
           />
-     <Card
+          <Card
             imgSrc={WonderInk}
             backgroundImg={WiBG}
             insideColor={"#f0f0e9"}
-
             title="WonderInk Application"
             info="WonderInk is a learning management system for leaders, parents, and students. I revamped the front-end interface to align with brand recognition, taking the lead in design decisions. "
             link="https://app.wonderink.org/?"
             buttonText="Demo Upon Request"
-          />  
-     <Card
-            
+          />
+          <Card
             imgSrc={WIgames}
             backgroundColor={"#f0f0e9"}
             insideColor={"#f0f0e9"}
-
             title="Game Design"
             info="      Additionally, I developed the
                   parent portal as a vital link between parents, students, and
@@ -519,7 +543,7 @@ const App = () => {
                   Demo Upon request."
             link="https://adobe.ly/3NGSw33?"
             buttonText="Go to Adobe XD"
-          />  
+          />
 
           <div className="Text p-24">
             <div className="flex justify-center">
