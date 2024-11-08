@@ -37,7 +37,7 @@ import AiFigmaBG from "./assets/AIfigmanew.png";
 import laptop from "./assets/laptop.png";
 import DU from "./assets/du.svg";
 import MIAD from "./assets/miadwhite.png";
-import UChi from ".assets/UChi.svg";
+import UChi from ".assets/UChi.png";
 
 
 const images = require.context("./assets/", false, /\.(png|jpe?g|svg)$/);
