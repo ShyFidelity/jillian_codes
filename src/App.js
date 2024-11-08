@@ -32,11 +32,12 @@ import WiBG from "./assets/wiSSnew.png";
 import WiScreen from "./assets/WIchurchtofamily.png";
 import WIlogo from "./assets/WonderInk001.svg";
 import WIgames from "./assets/wonderinkgames.png";
-import AiFigma from "./assets/AIfigma.png"
-import AiFigmaBG from "./assets/AIfigmanew.png"
-import laptop from "./assets/laptop.png"
-import DU from "./assets/du.svg"
-import MIAD from "./assets/miadwhite.png"
+import AiFigma from "./assets/AIfigma.png";
+import AiFigmaBG from "./assets/AIfigmanew.png";
+import laptop from "./assets/laptop.png";
+import DU from "./assets/du.svg";
+import MIAD from "./assets/miadwhite.png";
+import UChi from ".assets/UChi.svg";
 
 
 const images = require.context("./assets/", false, /\.(png|jpe?g|svg)$/);
@@ -125,10 +126,11 @@ const App = () => {
     
     <div class="scroll-container">
   <div class="scroll-content">
-    <img className="w-auto h-48" src={DU} alt="DU" />{" "}
-    <img className="w-auto h-[60px]"src={MIAD}></img>{" "}
+    <img className="w-auto h-48" src={DU} alt="DU" />
+    <img className="w-[60px] h-[60px]"src={MIAD}></img>
 
-    <img className="w-auto h-[60px]"src={Mouse}></img>{" "}
+    <img className="w-[80px] h-[60px]"src={Mouse}></img>
+    <img className="w-[80px] h-[60px]"src={UChi}></img>
 
 </div>
 </div>
