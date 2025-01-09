@@ -1,5 +1,7 @@
 import React from "react";
 import { Link, Element, animateScroll as scroll } from "react-scroll";
+import { ParallaxProvider, Parallax } from "react-scroll-parallax";
+
 import "./App.css";
 import me from "./assets/profpic1small.png";
 import legacy from "./assets/docsecurity.svg";
@@ -35,7 +37,7 @@ import WIgames from "./assets/wonderinkgames.png";
 import AiFigma from "./assets/AIfigma.png";
 import AiFigmaBG from "./assets/AIfigmanew.png";
 import laptop from "./assets/laptop.png";
-import DU from "./assets/du.svg";
+import DU from "./assets/u_denver.svg";
 import MIAD from "./assets/miadwhite.png";
 import UChi from "./assets/UChi.png";
 import idea from "./assets/ideajill.png";
@@ -68,7 +70,7 @@ const App = () => {
           <li>
             <img className="h-8" src={Mouse} alt="cute mouse" />{" "}
             <Link to="section3" smooth={true} duration={500}>
-              Graphics
+              Contact
             </Link>
           </li>
           <li>
@@ -89,11 +91,13 @@ const App = () => {
                 sequence={[
                   "Hi- Jillian, good to meet you",
                   500,
-                  "Glad ya made it, sorry about the mess haha",
+                  "Glad ya made it",
                   500,
                   "Can I answer any of your questions here?",
                   500,
                   "...",
+                  500,
+                  "Well, why don't you go see my portfolio below! : )",
                   500,
                 ]}
                 style={{ fontSize: "2.6rem", color: "#d2d7fa82" }}
@@ -131,35 +135,64 @@ const App = () => {
 
           <div className="h-[18px] w-full bg-[#cd9da0]"></div>
 
-          <div className="h-[120px] p-10 w-full bg-black flex items-center">
-            <div class="scroll-container">
-              <div class="scroll-content">
-                <img className="w-auto h-48" src={DU} alt="DU" />
-                <img className="w-[60px] h-[40px]" src={MIAD}></img>
-
-                <img className="w-[80px] h-[50px]" src={Mouse}></img>
-                <img className="w-[80px] h-[50px]" src={UChi}></img>
+          <div className="h-[120px] p-10 w-full bg-black flex items-center overflow-hidden">
+            <div className="scroll-container">
+              <div className="scroll-content">
+                <img src={DU} alt="DU" />
+                <img  src={MIAD} alt="MIAD" />
+                <img  src={Mouse} alt="Mouse" />
+                <img  src={UChi} alt="UChi" />
+                {/* Repeat the same set of images to create the looping effect */}
+                <img  src={DU} alt="DU" />
+                <img  src={MIAD} alt="MIAD" />
+                <img  src={Mouse} alt="Mouse" />
+                <img  src={UChi} alt="UChi" />
+                <img  src={DU} alt="DU" />
+                <img  src={MIAD} alt="MIAD" />
+                <img  src={Mouse} alt="Mouse" />
+                <img  src={UChi} alt="UChi" />
               </div>
             </div>
           </div>
-          <div className="p-20 flex flex-row column-2">
-            <img
-              className="round-lg w-auto h-[350px]"
-              src={idea}
-              alt="My Example"
-            />{" "}
+          <div className="p-20 flex flex-row column-2 pt-20 pb-40">
+            <ParallaxProvider>
+              <div>
+                <Parallax
+                  translateX={[-100, 0]} // Start 100px to the left, slide to 0px
+                  opacity={[0, 1]} // Start invisible, fade in
+                  easing="easeOutQuad"
+                  style={{
+                    width: "300px", // Adjust width as needed
+                    height: "auto",
+                    margin: "0 auto", // Center the image horizontally
+                    borderRadius: "10px", // Add some style
+                    overflow: "hidden", // Ensures no overflow on rounded corners
+                    boxShadow: "0px 10px 20px rgba(0, 0, 0, 0.2)", // Subtle shadow
+                  }}
+                >
+                  <img
+                    src={idea}
+                    alt="Sliding In Example"
+                    style={{
+                      width: "100%",
+                      height: "auto",
+                      display: "block",
+                    }}
+                  />
+                </Parallax>
+              </div>
+            </ParallaxProvider>
             <div className="w-full px-20">
-            <TypeAnimation
-  className="type-anim"
-  sequence={[
-    "The day was thick with questions, the kind that stick to your skin like smoke from a cheap cigar. I leaned back, letting my mind slip into that familiar place between shadow and light. Why—that's the thing I can't shake. Not the how or the what, but the why. I think about it like a puzzle, each piece fitting so perfectly that you almost forget there’s a design behind it. See, it’s gotta work so seamlessly, no one even knows it’s software. Invisible, like it’s always been there. Like it’s supposed to be. Every click, every color, every line—none of it by accident. Every decision matters, like setting the scene for a story only the user knows they’re in. That’s the trick, the art. Getting it right without anyone ever seeing the strings."
-  ]}
-  style={{ fontSize: "1.2rem", color: "#d2d7fa82" }}
-  repeat={Infinity}
-  speed={28}
-  deletionSpeed={8}
-/>
-
+              <TypeAnimation
+                className="type-anim"
+                sequence={[
+                  "The day was thick with questions, the kind that stick to your skin like smoke from a cheap cigar. I leaned back, letting my mind slip into that familiar place between shadow and light. Why—that's the thing I can't shake. Not the how or the what, but the why. I think about it like a puzzle, each piece fitting so perfectly that you almost forget there’s a design behind it. See, it’s gotta work so seamlessly, no one even knows it’s software. Invisible, like it’s always been there. Like it’s supposed to be. Every click, every color, every line—none of it by accident. Every decision matters, like setting the scene for a story only the user knows they’re in. That’s the trick, the art. Making it move without anyone ever seeing the strings.",
+                ]}
+                style={{ fontSize: "1.2rem", color: "#d2d7fa82" }}
+                repeat={Infinity}
+                speed={28}
+                deletionSpeed={8}
+              />
             </div>
           </div>
         </div>
@@ -194,7 +227,11 @@ const App = () => {
 
           <div className="icon-section gap-20">
             <div>
-              <a href="https://github.com/ShyFidelity" target="_blank">
+              <a
+                href="https://github.com/ShyFidelity"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <img className="icons" src={Github} alt="github logo" />
               </a>
             </div>
@@ -202,7 +239,8 @@ const App = () => {
             <div>
               <a
                 href="https://www.linkedin.com/in/jillianfitzmaurice100/"
-                target="_blank"
+                target="_blank "
+                rel="noreferrer"
               >
                 <img className="icons" src={Linkedin} alt="linkedin logo" />
               </a>
@@ -564,48 +602,68 @@ const App = () => {
       </Element>
 
       <Element name="section3" className="section section3-parent">
-        <div className="section3">
-          <div className="w-full flex flex-row">
-            <h2>Graphics</h2>
-          </div>
-          {/* <div className="flex flex-row w-full grid grid-cols-6 gap-x-3	justify-between">
-
-        </div> */}
-          <div className="child-section mb-8">
-            <h3 className="w-full">Badges</h3>
-
-            <div className="badges-section">
-              {imagesData.map((image, index) => (
-                <img
-                  className="badges"
-                  key={index}
-                  src={images(`./${image.src}`)}
-                  alt={image.alt}
-                />
-              ))}
-            </div>
+        <div className="icon-section gap-20">
+          <div>
+            <a
+              href="https://github.com/ShyFidelity"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img className="icons" src={Github} alt="github logo" />
+            </a>
           </div>
 
-          <div className="child-section mb-8">
-            <h3 className="w-full">Others</h3>
+          <div>
+            <a
+              href="https://www.linkedin.com/in/jillianfitzmaurice100/"
+              target="_blank "
+              rel="noreferrer"
+            >
+              <img className="icons" src={Linkedin} alt="linkedin logo" />
+            </a>
+          </div>
+          <div>
+            <a
+              href="mailto:fitzmauricejillian@gmail.com"
+              style={{ display: "flex", alignItems: "center" }}
+            >
+              <img
+                className="icons"
+                src={Mail}
+                alt="Email"
+                style={{ marginRight: "8px" }}
+              />
+              fitzmauricejillian@gmail.com
+            </a>
+          </div>
 
-            <div className="badges-section">
-              {drawingData.map((drawing, index) => (
-                <img
-                  className="drawings"
-                  key={index}
-                  src={drawings(`./${drawing.src}`)}
-                  alt={drawing.alt}
-                />
-              ))}
-            </div>
+          <div>
+            <a
+              className="contacta"
+              style={{ display: "flex", alignItems: "center" }}
+              href="tel:3039013230"
+              onClick={() => {
+                window.gtag("event", "click", {
+                  event_category: "Contact",
+                  event_label: "Mobile Button",
+                  value: "Call",
+                });
+              }}
+            >
+              <img
+                className="icons"
+                src={Phone}
+                alt="Phone"
+                style={{ marginRight: "8px" }}
+              />
+              303.901.3230
+            </a>
           </div>
-          <div className="my-32 flex justify-center">
-            <img className="hat" src={HatStar} alt={"cowboy Hat"} />
-          </div>
-          <div className="my-32">
-            <h3>303.901.3230</h3>
-            <h3>fitzmauricejillian@gmail.com</h3>
+
+          <div>
+            <a href={ResumeJill} download>
+              <img className="icons" src={Resume} alt="Resume" />
+            </a>
           </div>
         </div>
       </Element>
