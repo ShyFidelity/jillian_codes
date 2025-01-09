@@ -1,12 +1,14 @@
 {
   "files": {
-    "main.css": "/jillian_codes/static/css/main.b656c93b.css",
-    "main.js": "/jillian_codes/static/js/main.97c2d084.js",
+    "main.css": "/jillian_codes/static/css/main.36c2f4f2.css",
+    "main.js": "/jillian_codes/static/js/main.efe9163c.js",
     "static/js/453.80a3fe8d.chunk.js": "/jillian_codes/static/js/453.80a3fe8d.chunk.js",
     "static/media/legacycodevid.gif": "/jillian_codes/static/media/legacycodevid.f4f6323462c2d04b3d3a.gif",
     "static/media/edqualis.png": "/jillian_codes/static/media/edqualis.faed68e5b956772cda61.png",
     "static/media/edqualis2.png": "/jillian_codes/static/media/edqualis2.5be6a3c307dc17b31b22.png",
     "static/media/wonderinkgames.png": "/jillian_codes/static/media/wonderinkgames.a965b9cbcfc250c792f6.png",
+    "static/media/ideajill.png": "/jillian_codes/static/media/ideajill.d974a528199385091c29.png",
+    "static/media/laptop.png": "/jillian_codes/static/media/laptop.cce2563e9e5fc3ac5c02.png",
     "static/media/wonderink-01.png": "/jillian_codes/static/media/wonderink-01.94d493a5b1acc56d6125.png",
     "static/media/boltstack.png": "/jillian_codes/static/media/boltstack.b69c3d5cb2a1876af175.png",
     "static/media/ai-bg-w-h.png": "/jillian_codes/static/media/ai-bg-w-h.f6362bc355f4f5380888.png",
@@ -31,6 +33,10 @@
     "static/media/Whale.png": "/jillian_codes/static/media/Whale.37b4f0f6258a90835739.png",
     "static/media/wondeinkscreens.png": "/jillian_codes/static/media/wondeinkscreens.0b28cfc50e2215936e2e.png",
     "static/media/WIchurchtofamily.png": "/jillian_codes/static/media/WIchurchtofamily.d5216e211682054d17e8.png",
+    "static/media/laptop.svg": "/jillian_codes/static/media/laptop.934435ddef448db2cd4c.svg",
+    "static/media/new-bs.png": "/jillian_codes/static/media/new-bs.9cda3c2b75991db11ff1.png",
+    "static/media/yanewbs-01.png": "/jillian_codes/static/media/yanewbs-01.d18961401b95b83076c5.png",
+    "static/media/BSnewnew.png": "/jillian_codes/static/media/BSnewnew.f5d0b57974bee33f66a8.png",
     "static/media/ANNIVERSARY_YEAR.svg": "/jillian_codes/static/media/ANNIVERSARY_YEAR.6f8ff05d7bb0216deae3.svg",
     "static/media/wiSSnew.png": "/jillian_codes/static/media/wiSSnew.63d760bcfae2096ebd28.png",
     "static/media/legacybg.png": "/jillian_codes/static/media/legacybg.2401beaf7bdc023ee07b.png",
@@ -53,6 +59,7 @@
     "static/media/hatblue.png": "/jillian_codes/static/media/hatblue.fd4cf69020c9d14d6af9.png",
     "static/media/Incorrect.png": "/jillian_codes/static/media/Incorrect.fd1955272bc73571f807.png",
     "static/media/worknew.png": "/jillian_codes/static/media/worknew.e53cb7d7c1ac081a0fd9.png",
+    "static/media/UChi.png": "/jillian_codes/static/media/UChi.afd469d052c4d8213a5a.png",
     "static/media/workicon.png": "/jillian_codes/static/media/workicon.14a473c70a575f5dd600.png",
     "static/media/cowboyhatwhite.png": "/jillian_codes/static/media/cowboyhatwhite.db56c23a9a8cac67e345.png",
     "static/media/hatwhitenewnew.png": "/jillian_codes/static/media/hatwhitenewnew.1aa575daa8aa130718b3.png",
@@ -62,6 +69,7 @@
     "static/media/bg.svg": "/jillian_codes/static/media/bg.a2536bd936c8ebb1dbdc.svg",
     "static/media/linkedin.png": "/jillian_codes/static/media/linkedin.06a962e31d46ec17e36f.png",
     "static/media/cactus2.png": "/jillian_codes/static/media/cactus2.580e750e87071fe31d60.png",
+    "static/media/UChi.svg": "/jillian_codes/static/media/UChi.dc3bd76b2f3bf06a5c05.svg",
     "static/media/iphonenew.png": "/jillian_codes/static/media/iphonenew.6332abc0f1940912e8fd.png",
     "static/media/resume.png": "/jillian_codes/static/media/resume.233aa29618fe8b772cb5.png",
     "static/media/ai_tutor_btn.png": "/jillian_codes/static/media/ai_tutor_btn.e40bed31b945a3c15347.png",
@@ -72,8 +80,10 @@
     "static/media/10_WORSHIPS.svg": "/jillian_codes/static/media/10_WORSHIPS.7e72631f491601ca6401.svg",
     "static/media/chooseyourclues1.svg": "/jillian_codes/static/media/chooseyourclues1.d3f7236c58dc6c84b61f.svg",
     "static/media/PROGRESS.png": "/jillian_codes/static/media/PROGRESS.6ebc126a65cf4a474412.png",
+    "static/media/miadwhite.png": "/jillian_codes/static/media/miadwhite.245e5f1fb09777c25ca9.png",
     "static/media/chooseyourcluesassistantdetetective.svg": "/jillian_codes/static/media/chooseyourcluesassistantdetetective.d1fe04615940f97f9f3a.svg",
     "static/media/30_DAY_STREAK.svg": "/jillian_codes/static/media/30_DAY_STREAK.fd7f3a765c4b892051e1.svg",
+    "static/media/u_denver.svg": "/jillian_codes/static/media/u_denver.1ba1469df3760e4068961df585aa41a1.svg",
     "static/media/30_VIDEOS.svg": "/jillian_codes/static/media/30_VIDEOS.d43e472d39c056753ea1.svg",
     "static/media/curiouscat.svg": "/jillian_codes/static/media/curiouscat.2df264fdc7d595462677.svg",
     "static/media/10_ELEPHANT.svg": "/jillian_codes/static/media/10_ELEPHANT.d9d026090cca4f70021c.svg",
@@ -81,13 +91,14 @@
     "static/media/github-color.svg": "/jillian_codes/static/media/github-color.f5527e527dc831b252f1.svg",
     "static/media/memorymatch1.svg": "/jillian_codes/static/media/memorymatch1.cb6f34f689d6ce7a174f.svg",
     "static/media/WonderInk001.svg": "/jillian_codes/static/media/WonderInk001.5e0e59253b187633f9135219fd8595dd.svg",
+    "static/media/du.svg": "/jillian_codes/static/media/du.cfe3b069e8cc5d92a758.svg",
     "index.html": "/jillian_codes/index.html",
-    "main.b656c93b.css.map": "/jillian_codes/static/css/main.b656c93b.css.map",
-    "main.97c2d084.js.map": "/jillian_codes/static/js/main.97c2d084.js.map",
+    "main.36c2f4f2.css.map": "/jillian_codes/static/css/main.36c2f4f2.css.map",
+    "main.efe9163c.js.map": "/jillian_codes/static/js/main.efe9163c.js.map",
     "453.80a3fe8d.chunk.js.map": "/jillian_codes/static/js/453.80a3fe8d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b656c93b.css",
-    "static/js/main.97c2d084.js"
+    "static/css/main.36c2f4f2.css",
+    "static/js/main.efe9163c.js"
   ]
 }
