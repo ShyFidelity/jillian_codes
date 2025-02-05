@@ -100,7 +100,7 @@ const App = () => {
                   "Well, why don't you go see my portfolio below! : )",
                   500,
                 ]}
-                style={{ fontSize: "2.6rem", color: "#d2d7fa82" }}
+                style={{ fontSize: "1.6rem", color: "#d2d7fa82" }}
                 repeat={Infinity}
                 speed={10}
                 deletionSpeed={8}
