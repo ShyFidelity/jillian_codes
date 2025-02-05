@@ -51,8 +51,9 @@ margin-top: 2rem;
 .card-desc {
   width: 50%;
   gap: 1rem; 
-
-  background-color: rgba(255, 255, 255, 0.224);
+  backdrop-filter: blur(10px); /* Blur effect */
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  background-color: rgba(255, 255, 255, 0.46);
   border-left: #999 solid 1px;
   padding: 1.2rem;
   border-radius: 10px;

@@ -178,17 +178,8 @@ border-bottom: #3147b3 1px solid;
   border-bottom: 0.5px solid blue;
 
   padding-top: 3rem;
-  background: #d3cce3; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to bottom,
-    #050234,
-    #100046
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to bottom,
-    #273a91e2 60%,
-    #d3cce3
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #0d001e; /* fallback for old browsers */
+ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   width: auto;
   display: flex;
@@ -304,7 +295,7 @@ h3 {
   font-family: "Share Tech Mono", monospace;
   font-weight: 600;
   font-size: 2rem;
-  color: rgb(16, 18, 156);
+  color: rgb(53, 74, 231);
   padding-bottom: 1rem;
 }
 p {
@@ -319,21 +310,36 @@ p {
   border-radius: 50%;
   border: blue 1px solid;
 }
-
 .icon-section {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  flex-wrap: wrap; /* Ensures items wrap when space is limited */
+  gap: 1rem;
 }
 
 .icon-section > div {
   display: flex;
   flex-direction: row;
-  align-items: end;
-  justify-content: end;
+  align-items: center;
+  justify-content: center;
   gap: 1rem;
 }
+
+/* Responsive - Stack items in a column on small screens */
+@media (max-width: 640px) {
+  .icon-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .icon-section > div {
+    justify-content: center;
+    width: 100%;
+  }
+}
+
 .icon-section > div > p {
   font-size: 1rem;
   font-family: "Share Tech Mono", monospace;

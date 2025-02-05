@@ -24,7 +24,7 @@ import ResumeJill from "./assets/JillianFitzMaurice_Resume.pdf";
 import { TypeAnimation } from "react-type-animation";
 import JillianGif from "./assets/legacycodevid.gif";
 import HatStar from "./assets/hatblue.png";
-import LegacyBG from "./assets/legacy-bg-new-01.png";
+import LegacyBG from "./assets/legacybg.png";
 import AIBG from "./assets/ai-bg-w-h.png";
 import AIss from "./assets/Incorrect.png";
 import imagesData from "./assets/images.json";
@@ -89,18 +89,17 @@ const App = () => {
               <TypeAnimation
                 className="type-anim"
                 sequence={[
-                  "Hi- Jillian, good to meet you",
+                  "Hi- I'm Jillian, good to meet you",
                   500,
-                  "Glad ya made it",
+                  "Glad you're here",
                   500,
-                  "Can I answer any of your questions here?",
+                  "Let me know if I can answer any questions",
                   500,
                   "...",
                   500,
-                  "Well, why don't you go see my portfolio below! : )",
-                  500,
+            
                 ]}
-                style={{ fontSize: "1.6rem", color: "#d2d7fa82" }}
+                style={{ fontSize: "1.1rem", color: "#d2d7fa82" }}
                 repeat={Infinity}
                 speed={10}
                 deletionSpeed={8}
@@ -154,10 +153,10 @@ const App = () => {
               </div>
             </div>
           </div>
-          <div className="p-20 flex flex-row column-2 pt-20 pb-40">
-            <ParallaxProvider>
+          <div className="p-20 flex flex-col md:flex-row pt-20 pb-40">
+          {/* <ParallaxProvider> */}
               <div>
-                <Parallax
+                {/* <Parallax
                   translateX={[-100, 0]} // Start 100px to the left, slide to 0px
                   opacity={[0, 1]} // Start invisible, fade in
                   easing="easeOutQuad"
@@ -169,31 +168,12 @@ const App = () => {
                     overflow: "hidden", // Ensures no overflow on rounded corners
                     boxShadow: "0px 10px 20px rgba(0, 0, 0, 0.2)", // Subtle shadow
                   }}
-                >
-                  <img
-                    src={idea}
-                    alt="Sliding In Example"
-                    style={{
-                      width: "100%",
-                      height: "auto",
-                      display: "block",
-                    }}
-                  />
-                </Parallax>
+                > */}
+              
+                {/* </Parallax> */}
               </div>
-            </ParallaxProvider>
-            <div className="w-full px-20">
-              <TypeAnimation
-                className="type-anim"
-                sequence={[
-                  "The day was thick with questions, the kind that stick to your skin like smoke from a cheap cigar. I leaned back, letting my mind slip into that familiar place between shadow and light. Why—that's the thing I can't shake. Not the how or the what, but the why. I think about it like a puzzle, each piece fitting so perfectly that you almost forget there’s a design behind it. See, it’s gotta work so seamlessly, no one even knows it’s software. Invisible, like it’s always been there. Like it’s supposed to be. Every click, every color, every line—none of it by accident. Every decision matters, like setting the scene for a story only the user knows they’re in. That’s the trick, the art. Making it move without anyone ever seeing the strings.",
-                ]}
-                style={{ fontSize: "1.2rem", color: "#d2d7fa82" }}
-                repeat={Infinity}
-                speed={28}
-                deletionSpeed={8}
-              />
-            </div>
+            {/* </ParallaxProvider> */}
+     
           </div>
         </div>
       </Element>
@@ -225,70 +205,50 @@ const App = () => {
             </div>
           </div>
 
-          <div className="icon-section gap-20">
-            <div>
-              <a
-                href="https://github.com/ShyFidelity"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img className="icons" src={Github} alt="github logo" />
-              </a>
-            </div>
+          <div className="icon-section flex flex-wrap sm:flex-col items-center gap-5 p-4">
+  <div>
+    <a href="https://github.com/ShyFidelity" target="_blank" rel="noreferrer">
+      <img className="icons" src={Github} alt="github logo" />
+    </a>
+  </div>
 
-            <div>
-              <a
-                href="https://www.linkedin.com/in/jillianfitzmaurice100/"
-                target="_blank "
-                rel="noreferrer"
-              >
-                <img className="icons" src={Linkedin} alt="linkedin logo" />
-              </a>
-            </div>
-            <div>
-              <a
-                href="mailto:fitzmauricejillian@gmail.com"
-                style={{ display: "flex", alignItems: "center" }}
-              >
-                <img
-                  className="icons"
-                  src={Mail}
-                  alt="Email"
-                  style={{ marginRight: "8px" }}
-                />
-                fitzmauricejillian@gmail.com
-              </a>
-            </div>
+  <div>
+    <a href="https://www.linkedin.com/in/jillianfitzmaurice100/" target="_blank" rel="noreferrer">
+      <img className="icons" src={Linkedin} alt="linkedin logo" />
+    </a>
+  </div>
 
-            <div>
-              <a
-                className="contacta"
-                style={{ display: "flex", alignItems: "center" }}
-                href="tel:3039013230"
-                onClick={() => {
-                  window.gtag("event", "click", {
-                    event_category: "Contact",
-                    event_label: "Mobile Button",
-                    value: "Call",
-                  });
-                }}
-              >
-                <img
-                  className="icons"
-                  src={Phone}
-                  alt="Phone"
-                  style={{ marginRight: "8px" }}
-                />
-                303.901.3230
-              </a>
-            </div>
+  <div>
+    <a href="mailto:fitzmauricejillian@gmail.com" className="flex items-center">
+      <img className="icons mr-2" src={Mail} alt="Email" />
+      fitzmauricejillian@gmail.com
+    </a>
+  </div>
 
-            <div>
-              <a href={ResumeJill} download>
-                <img className="icons" src={Resume} alt="Resume" />
-              </a>
-            </div>
-          </div>
+  <div>
+    <a
+      className="contacta flex items-center"
+      href="tel:3039013230"
+      onClick={() => {
+        window.gtag("event", "click", {
+          event_category: "Contact",
+          event_label: "Mobile Button",
+          value: "Call",
+        });
+      }}
+    >
+      <img className="icons mr-2" src={Phone} alt="Phone" />
+      303.901.3230
+    </a>
+  </div>
+
+  <div>
+    <a href={ResumeJill} download>
+      <img className="icons" src={Resume} alt="Resume" />
+    </a>
+  </div>
+</div>
+
         </div>
       </Element>
 
