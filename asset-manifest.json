@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/jillian_codes/static/css/main.36c2f4f2.css",
-    "main.js": "/jillian_codes/static/js/main.efe9163c.js",
+    "main.css": "/jillian_codes/static/css/main.9b20d72f.css",
+    "main.js": "/jillian_codes/static/js/main.760cf860.js",
     "static/js/453.80a3fe8d.chunk.js": "/jillian_codes/static/js/453.80a3fe8d.chunk.js",
     "static/media/legacycodevid.gif": "/jillian_codes/static/media/legacycodevid.f4f6323462c2d04b3d3a.gif",
     "static/media/edqualis.png": "/jillian_codes/static/media/edqualis.faed68e5b956772cda61.png",
@@ -93,12 +93,12 @@
     "static/media/WonderInk001.svg": "/jillian_codes/static/media/WonderInk001.5e0e59253b187633f9135219fd8595dd.svg",
     "static/media/du.svg": "/jillian_codes/static/media/du.cfe3b069e8cc5d92a758.svg",
     "index.html": "/jillian_codes/index.html",
-    "main.36c2f4f2.css.map": "/jillian_codes/static/css/main.36c2f4f2.css.map",
-    "main.efe9163c.js.map": "/jillian_codes/static/js/main.efe9163c.js.map",
+    "main.9b20d72f.css.map": "/jillian_codes/static/css/main.9b20d72f.css.map",
+    "main.760cf860.js.map": "/jillian_codes/static/js/main.760cf860.js.map",
     "453.80a3fe8d.chunk.js.map": "/jillian_codes/static/js/453.80a3fe8d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.36c2f4f2.css",
-    "static/js/main.efe9163c.js"
+    "static/css/main.9b20d72f.css",
+    "static/js/main.760cf860.js"
   ]
 }
