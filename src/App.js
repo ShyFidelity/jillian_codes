@@ -89,7 +89,7 @@ const App = () => {
               <TypeAnimation
                 className="type-anim"
                 sequence={[
-                  "Hi- I'm Jillian, good to meet you",
+                  "Hi- I'm Jillian, nice to meet you",
                   500,
                   "Glad you're here",
                   500,
@@ -99,7 +99,7 @@ const App = () => {
                   500,
             
                 ]}
-                style={{ fontSize: "1.1rem", color: "#d2d7fa82" }}
+                style={{ fontSize: "2.2rem", color: "#d2d7fa82" }}
                 repeat={Infinity}
                 speed={10}
                 deletionSpeed={8}
